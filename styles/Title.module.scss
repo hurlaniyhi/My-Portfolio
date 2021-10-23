@@ -1,0 +1,29 @@
+$color-theme-text-bold: #e492f5;
+$color-theme-text: #F0C4F8;
+$color-deep-blue: #293C5F;
+$color-white: #fff;
+$color-theme-background: #0F0226;
+$color-theme-text-light: #e1d1e4;
+
+.titleWrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.titleText{
+    font-size: 3rem;
+    color: $color-theme-text;
+}
+.numbers{
+    font-family: satisfy, cursive;
+    padding-right: .5rem;
+    font-size: 2rem;
+    color: $color-theme-text-bold;
+}
+.titleLine{
+    width: 30%;
+    height: 0.01rem;
+    background-color: $color-theme-text;
+    margin-left: 3rem;
+}

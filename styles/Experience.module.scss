@@ -1,0 +1,88 @@
+$color-theme-text-bold: #e492f5;
+$color-theme-text: #F0C4F8;
+$color-deep-blue: #293C5F;
+$color-white: #fff;
+$color-theme-background: #0F0226;
+$color-theme-text-light: #e1d1e4;
+
+.container{
+    width: 85rem;
+    margin: 2rem auto 22rem auto;
+    //background-color: green;
+
+    @media(max-width: 750px){
+       width: 85%;
+    }
+}
+.workWrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    position: relative;
+}
+.companyContainer{
+    width: 13%;
+    margin-right: 5rem;
+    margin-left: 4rem;
+
+    @media(max-width: 750px){
+        display: none
+    }
+}
+.workDetails{
+    width: 75%;
+
+    @media(max-width: 750px){
+        width: 100%;
+        background-color: #321f56;
+        padding: 2rem 2rem 1rem 2rem;
+        border-radius: .5rem;
+     }
+}
+.companies{
+    font-size: 1.4rem;
+    color: $color-theme-text-bold;
+    line-height: 2.1rem;
+}
+.roleText{
+    font-size: 2.4rem;
+    color: $color-theme-text;
+    line-height: 3.6rem;
+    margin: 0;
+    padding: 0
+}
+.companyName{
+    color: $color-theme-text-bold
+}
+.verticalLine{
+    height: 18rem;
+    width: .05rem;
+    background-color: $color-theme-text-bold;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.workDate{
+    font-size: 1.6rem;
+    color: $color-theme-text;
+    line-height: 2.4rem;
+    margin: .5rem 0 2.5rem 0;
+    padding: 0;
+}
+.technologiesWrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0 0 1.5rem 0;
+}
+.technologyIcon{
+    font-size: 2rem;
+    color: $color-theme-text-bold;
+}
+.technologyText{
+    font-size: 1.6rem;
+    color: $color-theme-text-light;
+    padding-left: 1rem;
+    line-height: 2.4rem;
+    margin: 0;
+}

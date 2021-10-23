@@ -1,0 +1,136 @@
+$color-theme-text-bold: #e492f5;
+$color-theme-text: #F0C4F8;
+$color-deep-blue: #293C5F;
+$color-white: #fff;
+$color-theme-background: #0F0226;
+$color-theme-text-light: #e1d1e4;
+
+.container{
+    width: 100%;
+    margin: 2rem 0 22rem 0;
+    padding: 0 2% 0 12%;
+
+    @media(max-width: 500px){
+        padding-left: 7%;
+    }
+}
+.aboutTextWrapper{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    //align-items: center;
+
+    @media(max-width: 1080px){
+        flex-direction: column;
+    }
+}
+.textSection{
+    width: 60%;
+
+    @media(max-width: 1080px){
+        width: 75%;
+    }
+
+    @media(max-width: 500px){
+        width: 85%;
+    }
+    @media(max-width: 390px){
+        width: 90%;
+    }
+}
+.aboutText{
+    font-size: 2rem;
+    line-height: 3rem;
+    color: $color-theme-text-light;
+    padding: 0;
+    margin: 1rem 0 .5rem 0
+}
+.myAlias{
+    font-family: satisfy, cursive;
+}
+.techStack{
+    color: #64ffda;
+    padding-left: 1rem;
+}
+.picsContainer{
+    position: relative;
+    width: 40%;
+    height: 35rem;
+    //background-color: green;
+
+    @media(max-width: 1080px){
+        align-self: flex-end;
+    }
+}
+.picsFrame{
+    width: 29rem;
+    height: 30rem;
+    position: absolute;
+    top: 4.5rem;
+    right: 5.5rem;
+    border: 1px solid $color-theme-text-bold;
+    border-radius: .5rem
+}
+.picsWrapper{
+    width: 29rem;
+    height: 30rem;
+    position: absolute;
+    top: 3rem;
+    right: 7rem;
+    border-radius: .5rem;
+    //background-color: hsla(243, 100%, 7%, 0.959);
+    background-image: linear-gradient(
+        to right,
+        rgba($color-theme-text-bold, .3),
+        rgba($color-theme-text-bold, .3)
+      ),
+      url("../assets/pics.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;;
+    overflow: hidden;
+    z-index: 2;
+}
+.pics{
+    width: 100%;
+}
+.technologies{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 3.5rem;
+}
+.technologiesContainer{
+    width: 38%;
+    display: flex;
+    flex-direction: column;
+
+    @media(max-width: 800px){
+        width: 45%
+    }
+
+    @media(max-width: 500px){
+        width: 50%
+    }
+}
+.technologiesWrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 0 1.5rem 0;
+}
+.technologiesWrapperPlus{
+   // margin-left: 3rem;
+}
+.technologyIcon{
+    font-size: 2rem;
+    color: $color-theme-text-bold;
+}
+.technologyText{
+    font-size: 1.6rem;
+    color: #64ffda;
+    padding-left: 1rem;
+    line-height: 2.4rem;
+    margin: 0;
+}
