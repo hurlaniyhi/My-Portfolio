@@ -20,6 +20,12 @@ $color-theme-text-light: #e1d1e4;
     align-items: flex-start;
     position: relative;
 }
+.workWrapperMobile{
+    display: flex;
+    flex-direction: column;
+   // align-items: flex-start;
+    position: relative;
+}
 .companyContainer{
     width: 13%;
     margin-right: 5rem;
@@ -33,10 +39,20 @@ $color-theme-text-light: #e1d1e4;
     width: 75%;
 
     @media(max-width: 750px){
+       display: none
+     }
+}
+
+.workDetailsMobile{
+    display: none;
+
+    @media(max-width: 750px){
+        display: block;
         width: 100%;
         background-color: #321f56;
         padding: 2rem 2rem 1rem 2rem;
         border-radius: .5rem;
+        margin-bottom: 3.5rem;
      }
 }
 .companies{

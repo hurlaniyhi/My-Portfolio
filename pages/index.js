@@ -1,7 +1,8 @@
 import Head from 'next/head'
-import { FaChevronRight, FaFacebook, FaInstagram, FaLinkedin, FaTwitter} from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter} from "react-icons/fa";
 import About from '../components/About'
 import Experience from '../components/Experience'
+import Project from '../components/Project'
 //import Skills from '../components/Skills'
 import styles from '../styles/Home.module.scss'
 
@@ -52,6 +53,7 @@ export default function Home() {
       <div className={styles.contentSection}>
         <About />
         <Experience />
+        <Project />
         {/* <Skills /> */}
       </div>
 
