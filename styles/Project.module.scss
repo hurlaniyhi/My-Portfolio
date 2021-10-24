@@ -65,6 +65,12 @@ $color-theme-text-light: #e1d1e4;
         width: 100%;
         //height: 80rem
      }
+
+     @media(max-width: 600px){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 .projectImageRight{
     width: 60%;
@@ -79,6 +85,12 @@ $color-theme-text-light: #e1d1e4;
     margin-left: 0;
     width: 100%;
     //height: 80rem
+
+    @media(max-width: 600px){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
  }
 }
 .projectText{
@@ -234,4 +246,56 @@ $color-theme-text-light: #e1d1e4;
         width: 100%;
         height: 50rem;
     }
+}
+
+.emulatorImageRight{
+    width: 30rem;
+    height: 60rem;
+    margin-left: 25rem;
+
+    @media(max-width: 1130px){
+        margin-left: 15rem;
+    }
+    @media(max-width: 850px){
+        margin-left: 10rem
+    }
+    @media(max-width: 600px){
+       margin: 0;
+    }
+
+}
+.emulatorImageLeft{
+    width: 30rem;
+    height: 60rem;
+    margin-left: 37rem;
+
+    @media(max-width: 1670px){
+        margin-left: 20rem;
+    }
+    @media(max-width: 1430px){
+        margin-left: 15rem;
+    }
+    @media(max-width: 1280px){
+        margin-left: 10rem;
+    }
+    @media(max-width: 1130px){
+        margin-left: 7rem;
+    }
+
+    @media(max-width: 1010px){
+        margin-left: 0rem;
+    }
+
+    @media(max-width: 900px){
+        margin-left: 7rem;
+    }
+    @media(max-width: 850px){
+       float: right;
+       margin-right: 10rem
+    }
+
+    @media(max-width: 600px){
+       margin: 0;
+    }
+
 }
