@@ -314,7 +314,7 @@ $color-theme: #37507E;
     align-items: center;
     z-index: 10;
 
-    @media(max-width: 850px) {
+    @media(max-width: 800px) {
         display: none
      }
     @media(max-width: 450px) {
@@ -342,7 +342,7 @@ $color-theme: #37507E;
     align-items: center;
     z-index: 10;
 
-    @media(max-width: 850px) {
+    @media(max-width: 800px) {
         display: none
      }
     @media(max-width: 450px) {
@@ -460,4 +460,21 @@ $color-theme: #37507E;
     @media(max-width: 1250px) {
         display: none
     }
+}
+
+.footerText{
+    font-size: 1.4rem;
+    color: $color-theme-text-bold;
+    padding: 0 2rem;
+    margin-top: 12rem;
+    text-align: center;
+    line-height: 2.3rem;
+    margin-bottom: 3rem;
+
+    @media(max-width: 450px){
+        padding: 0 6rem;
+    }
+}
+.developer{
+    color: #64ffda
 }

@@ -1,10 +1,11 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter} from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaGithub} from "react-icons/fa";
 import About from '../components/About'
 import Experience from '../components/Experience'
 import Project from '../components/Project'
 import OtherWorks from '../components/OtherWorks'
+import Contact from '../components/Contact'
 //import Skills from '../components/Skills'
 import styles from '../styles/Home.module.scss'
 
@@ -58,7 +59,10 @@ export default function Home() {
         <Experience />
         <Project />
         <OtherWorks />
+        <Contact />
         {/* <Skills /> */}
+
+        <p className={styles.footerText}>Design inspired by Brittany Chiang's portfolio. Remixed and built by <span className={styles.developer}>Ridwan Kolawole</span>.</p>
       </div>
 
       <div className={styles.contactWrapper}>
@@ -66,6 +70,7 @@ export default function Home() {
         <FaInstagram className={styles.linkIcons} />
         <FaLinkedin className={styles.linkIcons} />
         <FaTwitter className={styles.linkIcons} />
+        <FaGithub className={styles.linkIcons} />
         <div className={styles.verticalLine}></div>
       </div>
       <div className={styles.emailWrapper}>

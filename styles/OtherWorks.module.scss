@@ -10,10 +10,6 @@ $color-theme-background-light: #321f56;
     width: 100%;
     margin: 2rem 0 22rem 0;
     padding: 0 2%;
-
-    @media(max-width: 500px){
-       
-    }
 }
 .title{
     font-size: 3.6rem;
@@ -77,7 +73,7 @@ $color-theme-background-light: #321f56;
     }
     @media(max-width: 600px){
         width: 95%;
-        height: 30rem
+        height: 28rem
     }
 
 }
