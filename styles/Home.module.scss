@@ -380,6 +380,7 @@ $color-theme: #37507E;
     font-size: 2rem;
     color: $color-theme-text-bold;
     margin-top: 3.5rem;
+    line-height: 3rem;
 
     @media(max-width: 350px) {
         margin-top: 2rem
@@ -391,7 +392,7 @@ $color-theme: #37507E;
 .myName{
     color: $color-theme-text;
     font-size: 6.4rem;
-    margin: 0;
+    margin: 1rem 0 0 0;
     padding: 0;
     //line-height: 8rem;
 
@@ -406,7 +407,7 @@ $color-theme: #37507E;
 .slogan{
     font-size: 3.5rem;
     color: $color-theme-text;
-    margin-top: -1rem;
+    //margin-top: -1rem;
     font-weight: 300;
 
     @media(max-width: 500px) {
@@ -439,5 +440,24 @@ $color-theme: #37507E;
     }
     @media(max-width: 350px) {
         margin-top: 1.5rem
+    }
+}
+.homeIllustrator{
+    width: 60rem;
+    height: 50rem;
+    position: fixed;
+    top: 22vh;
+    right: 18rem;
+
+    @media(max-width: 1800px) {
+        width: 45rem;
+        height: 40rem;
+    }
+
+    @media(max-width: 1400px) {
+        right: 12rem
+    }
+    @media(max-width: 1250px) {
+        display: none
     }
 }

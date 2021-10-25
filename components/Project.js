@@ -3,7 +3,7 @@ import styles from '../styles/Project.module.scss'
 import Title from '../components/reusable/Title'
 // import vsprout from '../assets/vsprout.png'
 // import managerApp from '../assets/managerApp.png'
-import { FaExternalLinkAlt } from "react-icons/fa";
+import { FiExternalLink } from "react-icons/fi";
 
 const Projects = () => {
     return(
@@ -25,7 +25,7 @@ const Projects = () => {
                         <p className={styles.toolText}>Node.js</p>
                         <p className={styles.toolText}>MongoDb</p>
                     </div>
-                    <FaExternalLinkAlt className={styles.linkIconLeft} />
+                    <FiExternalLink className={styles.linkIconLeft} />
                 </div>
                 <div className={styles.projectImageRight}>
                     <img src="/assets/vsprout.png" className={styles.projectImage} />
@@ -52,7 +52,7 @@ const Projects = () => {
                         <p className={styles.toolText}>Node.js</p>
                         <p className={styles.toolText}>MongoDb</p>
                     </div>
-                    <FaExternalLinkAlt className={styles.linkIconRight} />
+                    <FiExternalLink className={styles.linkIconRight} />
                 </div>
             </div>
 
@@ -71,7 +71,7 @@ const Projects = () => {
                         <p className={styles.toolText}>Node.js</p>
                         <p className={styles.toolText}>MongoDb</p>
                     </div>
-                    <FaExternalLinkAlt className={styles.linkIconLeft} />
+                    <FiExternalLink className={styles.linkIconLeft} />
                 </div>
                 <div className={styles.projectImageRight}>
                     <img src="/assets/emulator1.png" className={styles.emulatorImageRight} />
@@ -98,7 +98,7 @@ const Projects = () => {
                         <p className={styles.toolText}>Node.js</p>
                         <p className={styles.toolText}>MongoDb</p>
                     </div>
-                    <FaExternalLinkAlt className={styles.linkIconRight} />
+                    <FiExternalLink className={styles.linkIconRight} />
                 </div>
             </div>
 

@@ -1,8 +1,10 @@
 import Head from 'next/head'
+import Image from 'next/image'
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter} from "react-icons/fa";
 import About from '../components/About'
 import Experience from '../components/Experience'
 import Project from '../components/Project'
+import OtherWorks from '../components/OtherWorks'
 //import Skills from '../components/Skills'
 import styles from '../styles/Home.module.scss'
 
@@ -34,26 +36,28 @@ export default function Home() {
       </div>
 
       <div className={styles.introSection}>
-       <div className={styles.introSectionWrapper}>
-         <p className={`${styles.greeting} ${styles.resetPadding} ${styles.addFontWeight}`}>Hi, my name is</p>
-         <p className={styles.myName}>Ridwan Kolawole.</p>
-         <p className={`${styles.slogan} ${styles.resetPadding}`}>I use technology to build for humans.</p>
-         <p className={styles.greeting}>
-           I'm a Frontend Software engineer with over 4 years of experience using different tools to build software platforms and applications providing solutions to 
-           client's problems digitally.
-        </p>
-        <p className={styles.greeting}>
-          I'm a programming enthusiast that loves being challenged while enjoying my journey towards making the world a betters place through my technological skills in addressing problems
-          with both web and mobile softwares.
-        </p>
-        <a className={styles.navBtn}>Get in touch</a>
-       </div>
+        <img src="/assets/homeills1.png" className={styles.homeIllustrator} />
+        <div className={styles.introSectionWrapper}>
+          <p className={`${styles.greeting} ${styles.resetPadding} ${styles.addFontWeight}`}>Hi, my name is</p>
+          <p className={styles.myName}>Ridwan Kolawole.</p>
+          <p className={`${styles.slogan} ${styles.resetPadding}`}>I use technology to build for humans.</p>
+          <p className={styles.greeting}>
+            I'm a Frontend Software engineer with over 4 years of experience using different tools to build software platforms and applications providing solutions to 
+            client's problems digitally.
+          </p>
+          <p className={styles.greeting}>
+            I'm a programming enthusiast that loves being challenged while enjoying my journey towards making the world a betters place through my technological skills in addressing problems
+            with both web and mobile softwares.
+          </p>
+          <a className={styles.navBtn}>Get in touch</a>
+        </div>
       </div>
 
       <div className={styles.contentSection}>
         <About />
         <Experience />
         <Project />
+        <OtherWorks />
         {/* <Skills /> */}
       </div>
 
