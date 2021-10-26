@@ -83,6 +83,41 @@ const OtherWorks = () => {
                         <p className={styles.toolName}>AOS</p>
                     </div>
                 </div>
+                <div className={styles.projectContainer}>
+                    <img src="/assets/stack.svg" className={styles.stackIcon} />
+                    <FiExternalLink className={styles.linkIcon} />
+                    <p className={styles.projectName}>Thinklex</p>
+                    <p className={styles.aboutProject}>
+                        This is an online website for Newcore Technologies Ltd.
+                    </p>
+                    <div className={styles.projectToolsWrapper}>
+                        <p className={styles.toolName}>React-Native</p>
+                    </div>
+                </div>
+                <div className={styles.projectContainer}>
+                    <img src="/assets/stack.svg" className={styles.stackIcon} />
+                    <FiExternalLink className={styles.linkIcon} />
+                    <p className={styles.projectName}>Robotics in Banking</p>
+                    <p className={styles.aboutProject}>
+                        This is an internal web app for monitoring servers with auto-notification and server uptime and downtime analysis.
+                    </p>
+                    <div className={styles.projectToolsWrapper}>
+                        <p className={styles.toolName}>Canva</p>
+                    </div>
+                </div>
+                <div className={styles.projectContainer}>
+                    <img src="/assets/stack.svg" className={styles.stackIcon} />
+                    <FiExternalLink className={styles.linkIcon} />
+                    <p className={styles.projectName}>CI/CD with Travic CI</p>
+                    <p className={styles.aboutProject}>
+                        Implementation of Unit Testing with and CI/CD using Node.js, Mocha, and Travis CI
+                    </p>
+                    <div className={styles.projectToolsWrapper}>
+                        <p className={styles.toolName}>Node.js</p>
+                        <p className={styles.toolName}>Mocha</p>
+                        <p className={styles.toolName}>Travis CI</p>
+                    </div>
+                </div>
             </div>
         </div>
     )
