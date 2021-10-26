@@ -26,4 +26,9 @@ $color-theme-text-light: #e1d1e4;
     height: 0.01rem;
     background-color: $color-theme-text;
     margin-left: 3rem;
+
+    @media (max-width: 600px){
+        width: 20%;
+        height: 0.1rem
+    }
 }

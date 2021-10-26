@@ -68,7 +68,7 @@ export default function Home() {
         <img src="/assets/homeills1.png" className={styles.homeIllustrator} />
         <div className={styles.introSectionWrapper}>
           <p className={`${styles.greeting} ${styles.resetPadding} ${styles.addFontWeight}`}>Hi, my name is</p>
-          <p className={styles.myName}>Ridwan Kolawole.</p>
+          <p className={styles.myName} data-aos='fade-right' data-aos-once={true} data-aos-duration="1300">Ridwan Kolawole.</p>
           <p className={`${styles.slogan} ${styles.resetPadding}`}>I use technology to build for humans.</p>
           <p className={styles.greeting}>
             I'm a Frontend Software engineer with over 4 years of experience using different tools to build software platforms and applications providing solutions to 

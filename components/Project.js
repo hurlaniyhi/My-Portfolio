@@ -1,8 +1,6 @@
 import Image from 'next/image'
 import styles from '../styles/Project.module.scss'
 import Title from '../components/reusable/Title'
-// import vsprout from '../assets/vsprout.png'
-// import managerApp from '../assets/managerApp.png'
 import { FiExternalLink } from "react-icons/fi";
 
 const Projects = () => {
@@ -10,7 +8,7 @@ const Projects = () => {
         <div className={styles.container}>
             <Title number="03" title="Some Things I've Built" />
 
-            <div className={styles.projectWrapper}>
+            <div className={styles.projectWrapper} data-aos='fade-down-right' data-aos-once={true}>
                 <div className={styles.projectInfoLeft}>
                     <p className={`${styles.projectText} ${styles.textLeft}`}>Featured Project</p>
                     <p className={`${styles.projectName} ${styles.textLeft}`}>Virtuous Sprouts Portal</p>
@@ -33,7 +31,7 @@ const Projects = () => {
                 </div>
             </div>
 
-            <div className={`${styles.projectWrapper} ${styles.projectWrapperReverse}`}>
+            <div className={`${styles.projectWrapper} ${styles.projectWrapperReverse}`} data-aos='fade-down-left' data-aos-once={true}>
                 <div className={styles.projectImageLeft}>
                     <img src="/assets/email-platform2.png" className={styles.projectImage} />
                     <div className={styles.overlay}></div>
@@ -56,7 +54,7 @@ const Projects = () => {
                 </div>
             </div>
 
-            <div className={styles.projectWrapper}>
+            <div className={styles.projectWrapper} data-aos='fade-up-right' data-aos-once={true}>
                 <div className={styles.projectInfoLeft}>
                     <p className={`${styles.projectText} ${styles.textLeft}`}>Featured Project</p>
                     <p className={`${styles.projectName} ${styles.textLeft}`}>GTWorld</p>
@@ -78,7 +76,7 @@ const Projects = () => {
                 </div>
             </div>
 
-            <div className={`${styles.projectWrapper} ${styles.projectWrapperReverse}`}>
+            <div className={`${styles.projectWrapper} ${styles.projectWrapperReverse}`} data-aos='fade-up-left' data-aos-once={true}>
                 <div className={styles.projectImageLeft}>
                     <img src="/assets/emulator1.png" className={styles.emulatorImageLeft} />
                     {/* <div className={styles.overlay}></div> */}

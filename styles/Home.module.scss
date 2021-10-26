@@ -11,6 +11,47 @@ $color-deep-blue: #293C5F;
 $color-white: #fff;
 $color-light-blue: #47B2E4;
 
+
+@-webkit-keyframes up-down {
+    0% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  @keyframes up-down {
+    0% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+
+  @keyframes moveInLeft {
+    0% {
+      opacity: 0;
+      right: -30rem
+    }
+  
+    100% {
+      opacity: 1;
+      right: 0; /*to look the way it should look*/
+    }
+  }
+
+  @keyframes scaleUp {
+    0% {
+        transform: scale(.5)
+    }
+
+    100% {
+      transform: scale(1)
+    }
+  }
+
 @keyframes color-switchR {
     0% {
       color: $color-theme-text;
@@ -434,12 +475,15 @@ $color-light-blue: #47B2E4;
     font-size: 2rem;
     text-align: center;
     cursor: pointer;
+    animation-name: scaleUp;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
 
     &:visited{
 
     }
     &:hover{
-        background-color: #0f0326;
+        background-color: #625B71;
     }
 
     @media(max-width: 500px) {
@@ -455,6 +499,7 @@ $color-light-blue: #47B2E4;
     position: fixed;
     top: 22vh;
     right: 18rem;
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
 
     @media(max-width: 1800px) {
         width: 45rem;

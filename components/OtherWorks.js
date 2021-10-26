@@ -8,7 +8,7 @@ const OtherWorks = () => {
             <p className={styles.description}>Side Projects &nbsp; | &nbsp; Articles &nbsp; | &nbsp; Open Source</p>
 
             <div className={styles. projectsWrapper}>
-                <div className={styles.projectContainer}>
+                <div className={styles.projectContainer} data-aos='zoom-in'>
                     <img src="/assets/stack.svg" className={styles.stackIcon} />
                     <FiExternalLink className={styles.linkIcon} />
                     <p className={styles.projectName}>Staff Manager App</p>
@@ -22,7 +22,7 @@ const OtherWorks = () => {
                         <p className={styles.toolName}>MongoDb</p>
                     </div>
                 </div>
-                <div className={styles.projectContainer}>
+                <div className={styles.projectContainer} data-aos='zoom-in'>
                     <img src="/assets/stack.svg" className={styles.stackIcon} />
                     <FiExternalLink className={styles.linkIcon} />
                     <p className={styles.projectName}>Orange Tool Box</p>
@@ -33,7 +33,7 @@ const OtherWorks = () => {
                         <p className={styles.toolName}>SQL</p>
                     </div>
                 </div>
-                <div className={styles.projectContainer}>
+                <div className={styles.projectContainer} data-aos='zoom-in'>
                     <img src="/assets/stack.svg" className={styles.stackIcon} />
                     <FiExternalLink className={styles.linkIcon} />
                     <p className={styles.projectName}>Email-service Platform</p>
@@ -46,7 +46,7 @@ const OtherWorks = () => {
                         <p className={styles.toolName}>MongoDb</p>
                     </div>
                 </div>
-                <div className={styles.projectContainer}>
+                <div className={styles.projectContainer} data-aos='zoom-in'>
                     <img src="/assets/stack.svg" className={styles.stackIcon} />
                     <FiExternalLink className={styles.linkIcon} />
                     <p className={styles.projectName}>GT Server Monitor</p>
@@ -59,7 +59,7 @@ const OtherWorks = () => {
                         <p className={styles.toolName}>MongoDb</p>
                     </div>
                 </div>
-                <div className={styles.projectContainer}>
+                <div className={styles.projectContainer} data-aos='zoom-in'>
                     <img src="/assets/stack.svg" className={styles.stackIcon} />
                     <FiExternalLink className={styles.linkIcon} />
                     <p className={styles.projectName}>Rymz</p>
@@ -71,7 +71,7 @@ const OtherWorks = () => {
                         <p className={styles.toolName}>Node.js</p>
                     </div>
                 </div>
-                <div className={styles.projectContainer}>
+                <div className={styles.projectContainer} data-aos='zoom-in'>
                     <img src="/assets/stack.svg" className={styles.stackIcon} />
                     <FiExternalLink className={styles.linkIcon} />
                     <p className={styles.projectName}>Newcore technologies Site</p>
@@ -83,7 +83,7 @@ const OtherWorks = () => {
                         <p className={styles.toolName}>AOS</p>
                     </div>
                 </div>
-                <div className={styles.projectContainer}>
+                <div className={styles.projectContainer} data-aos='zoom-in'>
                     <img src="/assets/stack.svg" className={styles.stackIcon} />
                     <FiExternalLink className={styles.linkIcon} />
                     <p className={styles.projectName}>Thinklex</p>
@@ -94,7 +94,7 @@ const OtherWorks = () => {
                         <p className={styles.toolName}>React-Native</p>
                     </div>
                 </div>
-                <div className={styles.projectContainer}>
+                <div className={styles.projectContainer} data-aos='zoom-in'>
                     <img src="/assets/stack.svg" className={styles.stackIcon} />
                     <FiExternalLink className={styles.linkIcon} />
                     <p className={styles.projectName}>Robotics in Banking</p>
@@ -105,7 +105,7 @@ const OtherWorks = () => {
                         <p className={styles.toolName}>Canva</p>
                     </div>
                 </div>
-                <div className={styles.projectContainer}>
+                <div className={styles.projectContainer} data-aos='zoom-in'>
                     <img src="/assets/stack.svg" className={styles.stackIcon} />
                     <FiExternalLink className={styles.linkIcon} />
                     <p className={styles.projectName}>CI/CD with Travic CI</p>

@@ -9,6 +9,7 @@ $color-theme-text-light: #e1d1e4;
     width: 100%;
     margin: 2rem 0 22rem 0;
     padding: 0 2% 0 12%;
+    overflow: hidden;
 
     @media(max-width: 500px){
         padding-left: 7%;

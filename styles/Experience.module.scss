@@ -8,6 +8,7 @@ $color-theme-text-light: #e1d1e4;
 .container{
     width: 85rem;
     margin: 2rem auto 22rem auto;
+    overflow: hidden;
     //background-color: green;
 
     @media(max-width: 750px){
