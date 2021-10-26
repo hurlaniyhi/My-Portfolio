@@ -59,6 +59,11 @@ $color-theme-text-light: #e1d1e4;
     font-size: 1.4rem;
     color: $color-theme-text-bold;
     line-height: 2.1rem;
+    cursor: pointer;
+
+    &:hover{
+        color: $color-theme-text
+    }
 }
 .roleText{
     font-size: 2.4rem;
@@ -78,6 +83,18 @@ $color-theme-text-light: #e1d1e4;
     top: 0;
     left: 0;
 }
+.levelBar{
+    display: block;
+    position: absolute;
+    background-color: $color-theme-text;
+    width: 0.4rem;
+    height: 3rem;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 20%;
+    transition: all 0.3s;
+}
 .workDate{
     font-size: 1.6rem;
     color: $color-theme-text;
@@ -96,8 +113,8 @@ $color-theme-text-light: #e1d1e4;
     color: $color-theme-text-bold;
 }
 .technologyText{
-    font-size: 1.6rem;
-    color: $color-theme-text-light;
+    font-size: 1.5rem;  //1.6rem
+    color: $color-theme-text;
     padding-left: 1rem;
     line-height: 2.4rem;
     margin: 0;

@@ -493,6 +493,11 @@ $color-light-blue: #47B2E4;
     border-radius: .6rem;
     margin-left: 2rem;
     cursor: pointer;
+
+    &:hover{
+        color: $color-white;
+        background-color: #625B71;
+    }
 }
 
 
@@ -596,12 +601,12 @@ $color-light-blue: #47B2E4;
          }
 
          &::before {
-             top: -.8rem;
+             top: -1rem;
              //transform-origin: right; // it depects which side we want the transformation to
          }
 
          &::after {
-             top: .8rem;
+             top: 1rem;
          }
     }
 
@@ -692,7 +697,7 @@ $color-light-blue: #47B2E4;
     font-family: Satisfy, cursive;
 }
 .resumeBtn2{
-    width: 20rem;
+    width: 18rem;
     text-align: center;
     padding: 1.7rem 1rem;
     text-decoration: none;
@@ -701,5 +706,11 @@ $color-light-blue: #47B2E4;
     border-radius: .8rem;
     margin-top: 7rem;
     color: $color-theme-text;
-    font-size: 1.8rem
+    font-size: 1.8rem;
+    border: 1px solid $color-theme-text-bold;
+    
+    &:hover{
+        color: $color-white;
+        background-color: #625B71;
+    }
 }

@@ -1,3 +1,4 @@
+import {useEffect, useState} from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaGithub} from "react-icons/fa";
@@ -11,9 +12,15 @@ import styles from '../styles/Home.module.scss'
 
 export default function Home() {
 
-  const handleNavigation = () => {
-    console.log("Welcome Here")
-    document.querySelector(".navigation__checkbox").checked = false
+  // const [_document, set_document] = useState(null)
+  // useEffect(() => {
+  //   console.log(document.getElementById("navi-toggle"))
+  //   set_document(document)
+  // }, [])
+
+  function handleNavigation(){
+    document.getElementById("navi-toggle").checked = false
+    document.body.style.overflow = "auto"
   }
 
   return (
@@ -24,7 +31,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.navbar_container}>
-        <p className={styles.myLogo}>
+        <p className={styles.myLogo}> 
           <span className={styles.letterR}>R</span>
           <span className={styles.letterH}>h</span>
           <span className={styles.letterY}>y</span>
@@ -34,10 +41,10 @@ export default function Home() {
           <span className={styles.letterr}>r</span>
         </p>
         <div className={styles.nav_item_container}>
-            <a href="#about" className={styles.nav_item} onClick={handleNavigation} name="about"><span className={styles.numbers}>01.</span>About</a>
-            <a href="#projects" className={styles.nav_item} onClick={handleNavigation} name="projects"><span className={styles.numbers}>03.</span>Experience</a>
-            <a href="#FAQ" className={styles.nav_item} onClick={handleNavigation} name="FAQ"><span className={styles.numbers}>04.</span>Projects</a>
-            <a href="#contacts" className={styles.nav_item} onClick={handleNavigation} name="contacts"><span className={styles.numbers}>05.</span>Contact</a>
+            <a className={styles.nav_item} name="about"><span className={styles.numbers}>01.</span>About</a>
+            <a href="#projects" className={styles.nav_item} name="projects"><span className={styles.numbers}>02.</span>Experience</a>
+            <a href="#FAQ" className={styles.nav_item} name="FAQ"><span className={styles.numbers}>03.</span>Projects</a>
+            <a href="#contacts" className={styles.nav_item} name="contacts"><span className={styles.numbers}>04.</span>Contact</a>
             <a className={styles.resumeBtn}>Resume</a>
         </div>
       </div>
@@ -49,10 +56,10 @@ export default function Home() {
       <div className={styles["navigation__side-bar-wrapper"]}>
       </div>
       <div className={styles["side-bar-container"]}>
-          <a href="#about" className={styles["side-bar-items"]} href="#about" name="about="><span className={styles.sideNumbers}>01.</span>About</a>
-          <a href="#experience" className={styles["side-bar-items"]} href="#experience" name="experience"><span className={styles.sideNumbers}>02.</span>Experience</a>
-          <a href="#projects" className={styles["side-bar-items"]} href="#projects" name="projects"><span className={styles.sideNumbers}>03.</span>Projects</a>
-          <a href="#contacts" className={styles["side-bar-items"]} href="#contacts" name="contacts"><span className={styles.sideNumbers}>04.</span>Contact</a>
+          <a href="#about" className={styles["side-bar-items"]} onClick={()=>handleNavigation()} name="about="><span className={styles.sideNumbers}>01.</span>About</a>
+          <a href="#experience" className={styles["side-bar-items"]} onClick={()=>handleNavigation()} name="experience"><span className={styles.sideNumbers}>02.</span>Experience</a>
+          <a href="#projects" className={styles["side-bar-items"]} onClick={()=>handleNavigation()} name="projects"><span className={styles.sideNumbers}>03.</span>Projects</a>
+          <a href="#contacts" className={styles["side-bar-items"]} onClick={()=>handleNavigation()} name="contacts"><span className={styles.sideNumbers}>04.</span>Contact</a>
           <a className={styles.resumeBtn2}>Resume</a>
         </div>
 
@@ -86,7 +93,7 @@ export default function Home() {
         <p className={styles.footerText}>
           Design inspired by Brittany Chiang's portfolio. Remixed and built by 
           <span className={styles.developer}> Ridwan Kolawole</span>.
-          </p>
+        </p>
       </div>
 
       <div className={styles.contactWrapper}>

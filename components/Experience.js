@@ -1,93 +1,85 @@
+import {useState} from 'react'
 import styles from '../styles/Experience.module.scss'
 import Title from '../components/reusable/Title'
 import { FiPlay} from "react-icons/fi";
+import experienceProvider from '../provider/provider'
 
 const Experience = () => {
+
+    let initialExperienceState = {exp1: "#e492f5", exp2: "#e492f5", exp3: "#e492f5", exp4: "#e492f5", exp5: "#e492f5"}
+    const [index, setIndex] = useState(0)
+    const [levelBar, setLevelBar] = useState('0.9rem')
+    const [experience, setExperience] = useState(initialExperienceState)
+
+    function handleExperience(index, barHeight, experienceNo){
+        setIndex(index)
+        setLevelBar(barHeight)
+        setExperience({...initialExperienceState, [experienceNo]: "#F0C4F8"})
+    }
+
+    let experienceWorks = experienceProvider[index].workDone.map(data => {
+        return(
+            <div>
+                <div className={`${styles.technologiesWrapper}`}>
+                    <FiPlay className={styles.technologyIcon} />
+                    <p className={styles.technologyText}>
+                       {data}
+                    </p>
+                </div>
+            </div>
+        )
+    })
+
+    let allExperienceWorks = experienceProvider.map(data =>{
+        return(
+            <div className={styles.workWrapperMobile}>
+                <div className={styles.workDetailsMobile}>
+                    <p className={styles.roleText}> {data.position} <span className={styles.companyName}>{data.organization}</span></p>
+                    <p className={styles.workDate}>{data.date}</p>
+                    
+                    {
+                        data.workDone.map(work=>{
+                            return(
+                                <div>
+                                    <div className={`${styles.technologiesWrapper}`}>
+                                        <FiPlay className={styles.technologyIcon} />
+                                        <p className={styles.technologyText}>
+                                            {work}
+                                        </p>
+                                    </div>
+                                </div>
+                            )
+                        })
+                    }
+                </div>
+            </div>
+        )
+    })
+
     return(
         <div className={styles.container}>
              <Title number="02" title="Where I've worked" />
              <div className={styles.workWrapper}>
                  <div className={styles.companyContainer}>
-                    <div className={styles.verticalLine}></div>
-                     <p className={styles.companies}>GTBank Ltd</p>
-                     <p className={styles.companies}>GTB (Fintech)</p>
-                     <p className={styles.companies}>Newcore Tech.</p>
-                     <p className={styles.companies}>Freelance</p>
-                     <p className={styles.companies}>TCN</p>
+                    <div className={styles.verticalLine}>
+                        <div className={styles.levelBar} style={{top: levelBar}}></div>
+                    </div>
+                     <p className={styles.companies} style={{color: experience.exp1}} onClick={()=> handleExperience(0, '0.9rem', 'exp1')}>GTBank Ltd</p>
+                     <p className={styles.companies} style={{color: experience.exp2}} onClick={()=> handleExperience(1, '4.4rem', 'exp2')}>GTB (Fintech)</p>
+                     <p className={styles.companies} style={{color: experience.exp3}} onClick={()=> handleExperience(2, '8rem', 'exp3')}>Newcore Tech.</p>
+                     <p className={styles.companies} style={{color: experience.exp4}} onClick={()=> handleExperience(3, '11.4rem', 'exp4')}>Freelance</p>
+                     <p className={styles.companies} style={{color: experience.exp5}} onClick={()=> handleExperience(4, '15rem', 'exp5')}>TCN</p>
                  </div>
                  <div className={styles.workDetails}>
-                     <p className={styles.roleText}> Software Engineer <span className={styles.companyName}>@Guaranty Trust Ltd</span></p>
-                     <p className={styles.workDate}>2018 - 2020</p>
-                     <div className={`${styles.technologiesWrapper}`}>
-                        <FiPlay className={styles.technologyIcon} />
-                        <p className={styles.technologyText}>
-                            Design the Fullstack and algorithm curriculums.
-                        </p>
-                    </div>
-                    <div className={`${styles.technologiesWrapper}`}>
-                        <FiPlay className={styles.technologyIcon} />
-                        <p className={styles.technologyText}>
-                            Supervise other facilitators and ensure no student is left out irrespective of their learning pace and individual differences.
-                        </p>
-                    </div>
-                    <div className={`${styles.technologiesWrapper}`}>
-                        <FiPlay className={styles.technologyIcon} />
-                        <p className={styles.technologyText}>
-                            Perform logistical support duties which include booking and organizing sessions, processing payments and maintaining records & resources.
-                        </p>
-                    </div>
+                     <p className={styles.roleText}> {experienceProvider[index].position} <span className={styles.companyName}>{experienceProvider[index].organization}</span></p>
+                     <p className={styles.workDate}>{experienceProvider[index].date}</p>
+                     {experienceWorks}
                  </div>
             </div>
 
                 {/* ======================Experience on Phone Screens========================== */}
 
-            <div className={styles.workWrapperMobile}>
-                <div className={styles.workDetailsMobile}>
-                    <p className={styles.roleText}> Software Engineer <span className={styles.companyName}>@Guaranty Trust Bank Ltd</span></p>
-                    <p className={styles.workDate}>2018 - till date</p>
-                    <div className={`${styles.technologiesWrapper}`}>
-                        <FiPlay className={styles.technologyIcon} />
-                        <p className={styles.technologyText}>
-                            Design the Fullstack and algorithm curriculums.
-                        </p>
-                    </div>
-                    <div className={`${styles.technologiesWrapper}`}>
-                        <FiPlay className={styles.technologyIcon} />
-                        <p className={styles.technologyText}>
-                            Supervise other facilitators and ensure no student is left out irrespective of their learning pace and individual differences.
-                        </p>
-                    </div>
-                    <div className={`${styles.technologiesWrapper}`}>
-                        <FiPlay className={styles.technologyIcon} />
-                        <p className={styles.technologyText}>
-                            Perform logistical support duties which include booking and organizing sessions, processing payments and maintaining records & resources.
-                        </p>
-                    </div>
-                </div>
-
-                <div className={styles.workDetailsMobile}>
-                    <p className={styles.roleText}> Chief Technology Officer <span className={styles.companyName}>@Newcore Technologies</span></p>
-                    <p className={styles.workDate}>2018 - till date</p>
-                    <div className={`${styles.technologiesWrapper}`}>
-                        <FiPlay className={styles.technologyIcon} />
-                        <p className={styles.technologyText}>
-                            Design the Fullstack and algorithm curriculums.
-                        </p>
-                    </div>
-                    <div className={`${styles.technologiesWrapper}`}>
-                        <FiPlay className={styles.technologyIcon} />
-                        <p className={styles.technologyText}>
-                            Supervise other facilitators and ensure no student is left out irrespective of their learning pace and individual differences.
-                        </p>
-                    </div>
-                    <div className={`${styles.technologiesWrapper}`}>
-                        <FiPlay className={styles.technologyIcon} />
-                        <p className={styles.technologyText}>
-                            Perform logistical support duties which include booking and organizing sessions, processing payments and maintaining records & resources.
-                        </p>
-                    </div>
-                </div>
-            </div>
+            {allExperienceWorks}
         </div>
     )
 }
