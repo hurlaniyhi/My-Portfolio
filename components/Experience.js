@@ -2,7 +2,7 @@ import {useState} from 'react'
 import styles from '../styles/Experience.module.scss'
 import Title from '../components/reusable/Title'
 import { FiPlay} from "react-icons/fi";
-import experienceProvider from '../provider/provider'
+import experienceProvider from '../provider/experienceProvider'
 
 const Experience = () => {
 
