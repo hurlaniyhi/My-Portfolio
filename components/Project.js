@@ -59,7 +59,7 @@ const Projects = () => {
                     <p className={`${styles.projectName} ${styles.textLeft}`}>GTWorld</p>
                     <div className={styles.aboutProjectWrapper}>
                         <div className={styles.aboutProjectLeft}>
-                            <p className={styles.aboutProjectTextLeft}>GTWorld is one of GTBank mobile apps used by customers to carry out all banking activities including account opening and transactions.</p>
+                            <p className={styles.aboutProjectTextLeft}>GTWorld is one of GTBank mobile apps used by customers to carry out all banking activities including account opening, requests and transactions.</p>
                         </div>
                     </div>
                     <div className={styles.projectToolsWrapper}>
