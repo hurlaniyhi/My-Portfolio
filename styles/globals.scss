@@ -1,3 +1,10 @@
+$color-theme-text-bold: #e492f5;
+$color-theme-text: #F0C4F8;
+$color-deep-blue: #293C5F;
+$color-white: #fff;
+$color-theme-background: #0F0226;
+$color-theme: #37507E;
+
 html,
 body, body > div:first-child,
 div#__next,
@@ -53,6 +60,7 @@ body{
   padding: 0;
   margin: 0;
   height: 100%;
+  background-color: $color-theme-background
 }
 a {
   color: inherit;

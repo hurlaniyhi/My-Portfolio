@@ -4,7 +4,7 @@ import { FiExternalLink } from "react-icons/fi";
 
 const Projects = () => {
     return(
-        <div className={styles.container}>
+        <div id="projects" className={styles.container}>
             <Title number="03" title="Some Things I've Built" />
 
             <div className={styles.projectWrapper} data-aos='fade-down-right' data-aos-once={true}>

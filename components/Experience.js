@@ -57,7 +57,7 @@ const Experience = () => {
     })
 
     return(
-        <div className={styles.container} data-aos='fade-up' data-aos-once={true} data-aos-easing="ease-in-out" data-aos-duration="1200">
+        <div id="experience" className={styles.container} data-aos='fade-up' data-aos-once={true} data-aos-easing="ease-in-out" data-aos-duration="1200">
              <Title number="02" title="Where I've worked" />
              <div className={styles.workWrapper}>
                  <div className={styles.companyContainer}>

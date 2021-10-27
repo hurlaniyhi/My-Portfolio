@@ -12,8 +12,20 @@ import styles from '../styles/Home.module.scss'
 export default function Home() {
 
   function handleNavigation(){
+    console.log(document.getElementById("navi-toggle").checked)
     document.getElementById("navi-toggle").checked = false
     document.body.style.overflow = "auto"
+  }
+
+  const handleScroll = () => {
+    console.log("Ok")
+    if(document.getElementById("navi-toggle").checked === true){
+      document.body.style.overflow = "hidden"
+    }
+    else{
+      document.getElementById("navi-toggle").checked = false
+      document.body.style.overflow = "auto"
+    }
   }
 
   return (
@@ -34,26 +46,26 @@ export default function Home() {
           <span className={styles.letterr}>r</span>
         </p>
         <div className={styles.nav_item_container}>
-            <a className={styles.nav_item} name="about"><span className={styles.numbers}>01.</span>About</a>
-            <a href="#projects" className={styles.nav_item} name="projects"><span className={styles.numbers}>02.</span>Experience</a>
-            <a href="#FAQ" className={styles.nav_item} name="FAQ"><span className={styles.numbers}>03.</span>Projects</a>
+            <a href="#about" className={styles.nav_item} name="about"><span className={styles.numbers}>01.</span>About</a>
+            <a href="#experience" className={styles.nav_item} name="projects"><span className={styles.numbers}>02.</span>Experience</a>
+            <a href="#projects" className={styles.nav_item} name="FAQ"><span className={styles.numbers}>03.</span>Projects</a>
             <a href="#contacts" className={styles.nav_item} name="contacts"><span className={styles.numbers}>04.</span>Contact</a>
-            <a className={styles.resumeBtn}>Resume</a>
+            <a href="https://drive.google.com/file/d/1LrJkSjzHSbpl2MQMcU2ekEijWZXFPpmP/view?usp=sharing" target="_blank" rel="noopener noreferrer" className={styles.resumeBtn}>Resume</a>
         </div>
       </div>
 
-      <input type="checkbox" class={styles["navigation__checkbox"]} id="navi-toggle" />
+      <input type="checkbox" class={styles["navigation__checkbox"]} id="navi-toggle" onChange={handleScroll} />
       <label for="navi-toggle" class={styles["navigation__button"]}>
           <span class={styles["navigation__icon"]}>&nbsp;</span>
       </label>
-      <div className={styles["navigation__side-bar-wrapper"]}>
+      <div className={styles["navigation__side-bar-wrapper"]} onClick={handleScroll}>
       </div>
       <div className={styles["side-bar-container"]}>
           <a href="#about" className={styles["side-bar-items"]} onClick={()=>handleNavigation()} name="about="><span className={styles.sideNumbers}>01.</span>About</a>
           <a href="#experience" className={styles["side-bar-items"]} onClick={()=>handleNavigation()} name="experience"><span className={styles.sideNumbers}>02.</span>Experience</a>
           <a href="#projects" className={styles["side-bar-items"]} onClick={()=>handleNavigation()} name="projects"><span className={styles.sideNumbers}>03.</span>Projects</a>
           <a href="#contacts" className={styles["side-bar-items"]} onClick={()=>handleNavigation()} name="contacts"><span className={styles.sideNumbers}>04.</span>Contact</a>
-          <a className={styles.resumeBtn2}>Resume</a>
+          <a href="https://drive.google.com/file/d/1LrJkSjzHSbpl2MQMcU2ekEijWZXFPpmP/view?usp=sharing" target="_blank" rel="noopener noreferrer" className={styles.resumeBtn2}>Resume</a>
         </div>
 
 
@@ -71,7 +83,7 @@ export default function Home() {
             I'm a programming enthusiast that loves being challenged while enjoying my journey towards making the world a betters place through my technological skills in addressing problems
             with both web and mobile softwares.
           </p>
-          <a className={styles.navBtn}>Get in touch</a>
+          <a href='mailto:olaniyi.jibola152@gmail.com' className={styles.navBtn}>Get in touch</a>
         </div>
       </div>
 

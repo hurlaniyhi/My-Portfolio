@@ -4,7 +4,7 @@ import { FiPlay} from "react-icons/fi";
 
 const About = () => {
     return(
-        <div className={styles.container}>
+        <div className={styles.container} id="about">
            <Title number="01" title="About" />
             <div className={styles.aboutTextWrapper}>
                 <div className={styles.textSection} data-aos='zoom-in' data-aos-once={true} data-aos-easing="ease-in-out" data-aos-duration="1200">
