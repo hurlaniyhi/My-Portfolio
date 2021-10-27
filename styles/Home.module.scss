@@ -276,7 +276,8 @@ $color-light-blue: #47B2E4;
     text-decoration: none;
     font-size: 1.6rem;
     color: $color-theme-text;
-    cursor: pointer;
+    // cursor: pointer;
+    cursor: url('../public/assets/cursorhead.png'), auto;
     outline: none;
     transition: all 0.3s;
     padding: .5rem 1rem;
@@ -477,7 +478,8 @@ $color-light-blue: #47B2E4;
     transform: all .2s;
     font-size: 2rem;
     text-align: center;
-    cursor: pointer;
+    //cursor: pointer;
+    cursor: url('../public/assets/cursor24.png'), auto;
     animation-name: scaleUp;
     animation-duration: 1s;
     animation-timing-function: ease-out;
@@ -540,7 +542,8 @@ $color-light-blue: #47B2E4;
     border: 1px solid $color-theme-text-bold;
     border-radius: .6rem;
     margin-left: 2rem;
-    cursor: pointer;
+   // cursor: pointer;
+   cursor: url('../public/assets/cursorhead.png'), auto;
 
     &:hover{
         color: $color-white;
@@ -565,7 +568,8 @@ $color-light-blue: #47B2E4;
         right: 2rem;
         z-index: 8;
         text-align: center;
-        cursor: pointer;
+        //cursor: pointer;
+        cursor: url('../public/assets/navigation16.png'), auto;
 
         @media(max-width: 760px) {
             display: block
@@ -721,7 +725,8 @@ $color-light-blue: #47B2E4;
     text-decoration: none;
     font-size: 2.2rem;
     color: $color-theme-text;
-    cursor: pointer;
+    //cursor: pointer;
+    cursor: url('../public/assets/cursorhead.png'), auto;
     outline: none;
     padding: 1rem 1rem;
     width: 100%;

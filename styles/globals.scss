@@ -60,7 +60,8 @@ body{
   padding: 0;
   margin: 0;
   height: 100%;
-  background-color: $color-theme-background
+  background-color: $color-theme-background;
+  cursor: url('../public/assets/cursor.png'), auto;
 }
 a {
   color: inherit;

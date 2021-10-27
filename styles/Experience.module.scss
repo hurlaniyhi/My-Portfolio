@@ -60,7 +60,8 @@ $color-theme-text-light: #e1d1e4;
     font-size: 1.4rem;
     color: $color-theme-text-bold;
     line-height: 2.1rem;
-    cursor: pointer;
+    // cursor: pointer;
+    cursor: url('../public/assets/navigation16.png'), auto;
 
     &:hover{
         color: $color-theme-text
@@ -77,7 +78,8 @@ $color-theme-text-light: #e1d1e4;
     color: $color-theme-text-bold;
     text-decoration: none;
     outline: none;
-    cursor: pointer;
+   // cursor: pointer;
+   cursor: url('../public/assets/navigation24.png'), auto;
 
     &:hover{
         border-bottom: 1px solid $color-theme-text-bold;

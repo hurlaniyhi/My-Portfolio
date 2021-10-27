@@ -69,7 +69,8 @@ $color-theme-background-light: #321f56;
     width: 13.5rem;
     text-align: center;
     border-radius: .5rem;
-    cursor: pointer;
+    // cursor: pointer;
+    cursor: url('../public/assets/cursor24.png'), auto;
     transition: all 0.3s;
 
     &:hover, &:active{
