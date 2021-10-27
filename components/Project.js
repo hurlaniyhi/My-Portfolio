@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import styles from '../styles/Project.module.scss'
 import Title from '../components/reusable/Title'
 import { FiExternalLink } from "react-icons/fi";
@@ -23,22 +22,22 @@ const Projects = () => {
                         <p className={styles.toolText}>Node.js</p>
                         <p className={styles.toolText}>MongoDb</p>
                     </div>
-                    <FiExternalLink className={styles.linkIconLeft} />
+                    <a href="https://virtuous-sprout.herokuapp.com" target="_blank" rel="noopener noreferrer"><FiExternalLink className={styles.linkIconLeft} /></a>
                 </div>
                 <div className={styles.projectImageRight}>
-                    <img src="/assets/vsprout.png" className={styles.projectImage} />
-                    <div className={styles.overlay}></div>
+                    <img src="/assets/vsprout3.png" className={styles.projectImage} />
+                    {/* <div className={styles.overlay}></div> */}
                 </div>
             </div>
 
             <div className={`${styles.projectWrapper} ${styles.projectWrapperReverse}`} data-aos='fade-down-left' data-aos-once={true}>
                 <div className={styles.projectImageLeft}>
                     <img src="/assets/email-platform2.png" className={styles.projectImage} />
-                    <div className={styles.overlay}></div>
+                    {/* <div className={styles.overlay}></div> */}
                 </div>
                 <div className={styles.projectInfoRight}>
                     <p className={`${styles.projectText} ${styles.textRight}`}>Featured Project</p>
-                    <p className={`${styles.projectName} ${styles.textRight}`}>Email-Service Platform</p>
+                    <p className={`${styles.projectName} ${styles.textRight}`}>Auto Email Response</p>
                     <div className={styles.aboutProjectWrapper}>
                         <div className={styles.aboutProjectRight}>
                             <p className={styles.aboutProjectTextRight}>This is a web application that allows GTBank staff to personalize and send already written mails to developers registered on GTBank developers' portal.</p>
@@ -50,7 +49,7 @@ const Projects = () => {
                         <p className={styles.toolText}>Node.js</p>
                         <p className={styles.toolText}>MongoDb</p>
                     </div>
-                    <FiExternalLink className={styles.linkIconRight} />
+                    <a href="https://gtautoresponse.herokuapp.com" target="_blank" rel="noopener noreferrer"><FiExternalLink className={styles.linkIconRight} /></a>
                 </div>
             </div>
 
@@ -68,17 +67,17 @@ const Projects = () => {
                         <p className={styles.toolText}>Asp.net</p>
                         <p className={styles.toolText}>SQL</p>
                     </div>
-                    <FiExternalLink className={styles.linkIconLeft} />
+                    <a href="https://play.google.com/store/search?q=gtword&c=apps" target="_blank" rel="noopener noreferrer"><FiExternalLink className={styles.linkIconLeft} /></a>
                 </div>
                 <div className={styles.projectImageRight}>
-                    <img src="/assets/emulator1.png" className={styles.emulatorImageRight} />
+                    <img src="/assets/shopwyse2.png" className={styles.emulatorImageRight} />
                     {/* <div className={styles.overlay}></div> */}
                 </div>
             </div>
 
             <div className={`${styles.projectWrapper} ${styles.projectWrapperReverse}`} data-aos='fade-up-left' data-aos-once={true}>
                 <div className={styles.projectImageLeft}>
-                    <img src="/assets/emulator1.png" className={styles.emulatorImageLeft} />
+                    <img src="/assets/shopwyse3.png" className={styles.emulatorImageLeft} />
                     {/* <div className={styles.overlay}></div> */}
                 </div>
                 <div className={styles.projectInfoRight}>
@@ -95,7 +94,7 @@ const Projects = () => {
                         <p className={styles.toolText}>MongoDb</p>
                         <p className={styles.toolText}>Socket.io</p>
                     </div>
-                    <FiExternalLink className={styles.linkIconRight} />
+                    <a href="https://drive.google.com/file/d/1KQqhHzfJttZCk23h_-BqibATsFUXthpr/view?usp=sharing" target="_blank" rel="noopener noreferrer"><FiExternalLink className={styles.linkIconRight} /></a>
                 </div>
             </div>
 

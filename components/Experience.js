@@ -67,8 +67,8 @@ const Experience = () => {
                      <p className={styles.companies} style={{color: experience.exp1}} onClick={()=> handleExperience(0, '0.9rem', 'exp1')}>GTBank Ltd</p>
                      <p className={styles.companies} style={{color: experience.exp2}} onClick={()=> handleExperience(1, '4.4rem', 'exp2')}>GTB (Fintech)</p>
                      <p className={styles.companies} style={{color: experience.exp3}} onClick={()=> handleExperience(2, '8rem', 'exp3')}>Newcore Tech.</p>
-                     <p className={styles.companies} style={{color: experience.exp4}} onClick={()=> handleExperience(3, '11.4rem', 'exp4')}>Freelance</p>
-                     <p className={styles.companies} style={{color: experience.exp5}} onClick={()=> handleExperience(4, '15rem', 'exp5')}>TCN</p>
+                     <p className={styles.companies} style={{color: experience.exp4}} onClick={()=> handleExperience(3, '11.4rem', 'exp4')}>VSProuts</p>
+                     <p className={styles.companies} style={{color: experience.exp5}} onClick={()=> handleExperience(4, '15rem', 'exp5')}>Freelance</p>
                  </div>
                  <div className={styles.workDetails}>
                      <p className={styles.roleText}> {experienceProvider[index].position} <span className={styles.companyName}>{experienceProvider[index].organization}</span></p>

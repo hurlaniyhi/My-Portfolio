@@ -8,7 +8,7 @@ const Contact = () => {
                 <p className={styles.introText}><span className={styles.number}>04.</span>Wanna reach me?</p>
                 <h3 className={styles.contactTitle}>Get In Touch</h3>
                 <p className={styles.contactText}>
-                    I am open to new job opportunities. If you wanna get in touch, talk to me about a project collaboration or just say hi, click the button below or send an email to jalasem@abdulsamii.com and ~let's talk!
+                    I am currently open to new job opportunities. If you wanna reach me, be part of your team or just say hi, click the button below or send an email to <span className={styles.developer}> olaniyi.jibola152@gmail.com</span> and ~let's make the world a better place to live!
                 </p>
                 <a className={styles.contactNavBtn}>Say Hello</a>
                 <div className={styles.contactLinks}>

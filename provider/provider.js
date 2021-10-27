@@ -23,20 +23,20 @@ const experienceProvider = [
         "Test and review codes written by other software developers"]
     },
     {
+        position: "Software Engineer",
+        organization: "@VSprouts Academy",
+        date: "2019 - 2020",
+        workDone: [
+        "I design, build, maintain and fix issues with the organization's platforms",
+       ]
+    },
+    {
         position: "Software Developer",
         organization: "@Freelance",
         date: "2017 - till date",
         workDone: ["I research, design, and build web and mobile applications for organizations following the recommended standard", 
         "Take up new algorithm tasks and code challenges",
         "Train and mentor numbers of people regarding software development"]
-    },
-    {
-        position: "Intern",
-        organization: "@TCN",
-        date: "2017 - 2017",
-        workDone: [
-        "Worked with the Protection, control and maintenace team to carry out preventive and corrective maintenance of Electrical devices, troubleshooting of Electrical faults and installation of Electrical devices, such as current and voltage transformers.",
-       ]
     }
 ]
 

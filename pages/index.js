@@ -1,6 +1,5 @@
 import {useEffect, useState} from 'react'
 import Head from 'next/head'
-import Image from 'next/image'
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaGithub} from "react-icons/fa";
 import About from '../components/About'
 import Experience from '../components/Experience'
@@ -11,12 +10,6 @@ import Contact from '../components/Contact'
 import styles from '../styles/Home.module.scss'
 
 export default function Home() {
-
-  // const [_document, set_document] = useState(null)
-  // useEffect(() => {
-  //   console.log(document.getElementById("navi-toggle"))
-  //   set_document(document)
-  // }, [])
 
   function handleNavigation(){
     document.getElementById("navi-toggle").checked = false
