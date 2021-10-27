@@ -58,6 +58,76 @@ $color-theme-text-light: #e1d1e4;
 }
 .projectImageLeft{
     width: 60%;
+    position: relative;
+    overflow: hidden;
+    //********* new change ***********
+    background-image: url('../public/assets/email-platform2.png');
+    height: 55rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @media(max-width: 850px){
+        width: 100%;
+     }
+
+     @media(max-width: 600px){
+        height: 40rem
+    }
+    @media(max-width: 450px){
+        height: 35rem
+    }
+}
+.projectImageRight{
+    width: 60%;
+    margin-right: 10%;
+    position: relative;
+    overflow: hidden;
+
+    //***** new change *******
+    background-image: url('../public/assets/vsprout3.png');
+    height: 50rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+   @media(max-width: 850px){
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%;
+   }
+
+    @media(max-width: 600px){
+        height: 40rem
+    }
+    @media(max-width: 450px){
+        height: 35rem
+    }
+}
+
+.altprojectImageRight{
+    width: 60%;
+    //height: 50rem;
+    margin-right: 10%;
+    position: relative;
+    overflow: hidden;
+
+    @media(max-width: 850px){
+        margin-right: 0;
+        margin-left: 0;
+        width: 100%;
+    }
+    //height: 80rem
+
+    @media(max-width: 600px){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.altprojectImageLeft{
+    width: 60%;
     //height: 50rem;
     position: relative;
     overflow: hidden;
@@ -73,27 +143,6 @@ $color-theme-text-light: #e1d1e4;
         flex-direction: column;
         align-items: center;
     }
-}
-.projectImageRight{
-    width: 60%;
-    //height: 50rem;
-    margin-right: 10%;
-    position: relative;
-    overflow: hidden;
-   // background-color: green;
-
-   @media(max-width: 850px){
-    margin-right: 0;
-    margin-left: 0;
-    width: 100%;
-    //height: 80rem
-
-    @media(max-width: 600px){
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
- }
 }
 .projectText{
     font-size: 1.4rem;

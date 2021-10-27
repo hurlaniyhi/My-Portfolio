@@ -25,14 +25,14 @@ const Projects = () => {
                     <a href="https://virtuous-sprout.herokuapp.com" target="_blank" rel="noopener noreferrer"><FiExternalLink className={styles.linkIconLeft} /></a>
                 </div>
                 <div className={styles.projectImageRight}>
-                    <img src="/assets/vsprout3.png" className={styles.projectImage} />
+                    {/* <img src="/assets/vsprout3.png" className={styles.projectImage} /> */}
                     {/* <div className={styles.overlay}></div> */}
                 </div>
             </div>
 
             <div className={`${styles.projectWrapper} ${styles.projectWrapperReverse}`} data-aos='fade-down-left' data-aos-once={true}>
                 <div className={styles.projectImageLeft}>
-                    <img src="/assets/email-platform2.png" className={styles.projectImage} />
+                    {/* <img src="/assets/email-platform2.png" className={styles.projectImage} /> */}
                     {/* <div className={styles.overlay}></div> */}
                 </div>
                 <div className={styles.projectInfoRight}>
@@ -69,14 +69,14 @@ const Projects = () => {
                     </div>
                     <a href="https://play.google.com/store/search?q=gtword&c=apps" target="_blank" rel="noopener noreferrer"><FiExternalLink className={styles.linkIconLeft} /></a>
                 </div>
-                <div className={styles.projectImageRight}>
+                <div className={styles.altprojectImageRight}>
                     <img src="/assets/canva2.png" className={styles.emulatorImageRight} />
                     {/* <div className={styles.overlay}></div> */}
                 </div>
             </div>
 
             <div className={`${styles.projectWrapper} ${styles.projectWrapperReverse}`} data-aos='fade-up-left' data-aos-once={true}>
-                <div className={styles.projectImageLeft}>
+                <div className={styles.altprojectImageLeft}>
                     <img src="/assets/canva1.png" className={styles.emulatorImageLeft} />
                     {/* <div className={styles.overlay}></div> */}
                 </div>
