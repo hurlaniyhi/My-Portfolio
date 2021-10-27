@@ -41,7 +41,7 @@ const experienceProvider = [
         date: "2018 - 2021",
         workDone: ["I researched, designed, and built web and mobile applications for organizations following the recommended standard", 
         "Took up new algorithm tasks and code challenges",
-        "Trained and mentored numbers of people regarding software development"]
+        "Trained and mentored number of people regarding software development"]
     }
 ]
 
