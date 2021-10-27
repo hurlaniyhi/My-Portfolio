@@ -12,7 +12,7 @@ const experienceProvider = [
         position: "Software Developer",
         organization: "@GTB (Fintech)",
         link: "https://www.gtbank.com/",
-        date: "2020 - 2021",
+        date: "2019 - 2021",
         workDone: ["I Worked with the team of system developers, UI/UX, designers and business developers to research, innovate, design and build web and mobile apps that solve financial problems.", 
         "Researched and wrote articles related to financial technology."]
     },
