@@ -63,7 +63,6 @@ const About = () => {
                 </div> 
                 <div className={styles.picsContainer} data-aos='fade-down' data-aos-once={true} data-aos-easing="ease-in-out" data-aos-duration="1200">
                     <div className={styles.picsWrapper}>
-                        {/* <Image src={profilePics} className={styles.pics} layout="fill" /> */}
                     </div>
                     <div className={styles.picsFrame}></div>
                 </div>
