@@ -34,7 +34,7 @@ const Experience = () => {
         return(
             <div className={styles.workWrapperMobile}>
                 <div className={styles.workDetailsMobile}>
-                    <p className={styles.roleText}> {data.position} <span className={styles.companyName}>{data.organization}</span></p>
+                    <p className={styles.roleText}> {data.position} <a href={`${data.link}`} target="_blank" rel="noopener noreferrer"  className={styles.companyName}>{data.organization}</a></p>
                     <p className={styles.workDate}>{data.date}</p>
                     
                     {
@@ -71,7 +71,7 @@ const Experience = () => {
                      <p className={styles.companies} style={{color: experience.exp5}} onClick={()=> handleExperience(4, '15rem', 'exp5')}>Freelance</p>
                  </div>
                  <div className={styles.workDetails}>
-                     <p className={styles.roleText}> {experienceProvider[index].position} <span className={styles.companyName}>{experienceProvider[index].organization}</span></p>
+                     <p className={styles.roleText}> {experienceProvider[index].position} <a href={`${experienceProvider[index].link}`} target="_blank" rel="noopener noreferrer" className={styles.companyName}>{experienceProvider[index].organization}</a></p>
                      <p className={styles.workDate}>{experienceProvider[index].date}</p>
                      {experienceWorks}
                  </div>

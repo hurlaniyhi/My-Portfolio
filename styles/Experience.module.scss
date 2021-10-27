@@ -74,7 +74,14 @@ $color-theme-text-light: #e1d1e4;
     padding: 0
 }
 .companyName{
-    color: $color-theme-text-bold
+    color: $color-theme-text-bold;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+
+    &:hover{
+        border-bottom: 1px solid $color-theme-text-bold;
+    }
 }
 .verticalLine{
     height: 18rem;

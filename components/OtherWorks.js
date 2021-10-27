@@ -81,7 +81,7 @@ const OtherWorks = () => {
                         <p className={styles.toolName}>MongoDb</p>
                     </div>
                 </div>
-                <div className={styles.projectContainer} data-aos='zoom-in'>
+                {/* <div className={styles.projectContainer} data-aos='zoom-in'>
                     <img src="/assets/stack.svg" className={styles.stackIcon} />
                     <a href="https://drive.google.com/file/d/1KRUZLoBuwCXuVtVi5oxua56ho2KLxck0/view?usp=sharing" target="_blank" rel="noopener noreferrer"><FiExternalLink className={styles.linkIcon} /></a>
                     <p className={styles.projectName}>Thinklex</p>
@@ -91,6 +91,18 @@ const OtherWorks = () => {
                     </p>
                     <div className={styles.projectToolsWrapper}>
                         <p className={styles.toolName}>React-Native</p>
+                    </div>
+                </div> */}
+                <div className={styles.projectContainer} data-aos='zoom-in'>
+                    <img src="/assets/stack.svg" className={styles.stackIcon} />
+                    <a href="https://play.google.com/store/apps/details?id=com.vanso.gtbankapp" target="_blank" rel="noopener noreferrer"><FiExternalLink className={styles.linkIcon} /></a>
+                    <p className={styles.projectName}>GTMobile</p>
+                    <p className={styles.aboutProject}>
+                        A GTBank mobile app used by customers to carry out all banking activities including account opening, requests and transactions.
+                    </p>
+                    <div className={styles.projectToolsWrapper}>
+                        <p className={styles.toolName}>Native</p>
+                        <p className={styles.toolName}>Asp.net</p>
                     </div>
                 </div>
                 <div className={styles.projectContainer} data-aos='zoom-in'>

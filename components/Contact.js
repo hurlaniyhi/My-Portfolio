@@ -13,11 +13,11 @@ const Contact = () => {
                 </p>
                 <a className={styles.contactNavBtn} href='mailto:olaniyi.jibola152@gmail.com'>Say Hello</a>
                 <div className={styles.contactLinks}>
-                    <FaFacebook className={styles.contactLinkIcons} />
-                    <FaInstagram className={styles.contactLinkIcons} />
-                    <FaLinkedin className={styles.contactLinkIcons} />
-                    <FaGithub className={styles.contactLinkIcons} />
-                    <FaTwitter className={styles.contactLinkIcons} />
+                    <a href="https://www.facebook.com/hurlaniyhi/" target="_blank" rel="noopener noreferrer"><FaFacebook className={styles.contactLinkIcons} /></a>
+                    <a href="https://www.instagram.com/hurlaniyhi/" target="_blank" rel="noopener noreferrer"><FaInstagram className={styles.contactLinkIcons} /></a>
+                    <a href="https://www.linkedin.com/in/ridwan-kolawole-7b4931184/?originalSubdomain=ng" target="_blank" rel="noopener noreferrer"><FaLinkedin className={styles.contactLinkIcons} /></a>
+                    <a href="https://github.com/hurlaniyhi" target="_blank" rel="noopener noreferrer"><FaGithub className={styles.contactLinkIcons} /></a>
+                    <a href="https://twitter.com/MisterJS" target="_blank" rel="noopener noreferrer"><FaTwitter className={styles.contactLinkIcons} /></a>
                 </div>
             </div>
         </div>

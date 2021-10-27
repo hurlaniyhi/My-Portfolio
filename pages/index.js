@@ -50,7 +50,7 @@ export default function Home() {
             <a href="#experience" className={styles.nav_item} name="projects"><span className={styles.numbers}>02.</span>Experience</a>
             <a href="#projects" className={styles.nav_item} name="FAQ"><span className={styles.numbers}>03.</span>Projects</a>
             <a href="#contacts" className={styles.nav_item} name="contacts"><span className={styles.numbers}>04.</span>Contact</a>
-            <a href="https://drive.google.com/file/d/1LrJkSjzHSbpl2MQMcU2ekEijWZXFPpmP/view?usp=sharing" target="_blank" rel="noopener noreferrer" className={styles.resumeBtn}>Resume</a>
+            <a href="https://drive.google.com/file/d/1oL3U7tr2otbmZNf6sUh8_89vcPUgRwyP/view" target="_blank" rel="noopener noreferrer" className={styles.resumeBtn}>Resume</a>
         </div>
       </div>
 
@@ -65,7 +65,7 @@ export default function Home() {
           <a href="#experience" className={styles["side-bar-items"]} onClick={()=>handleNavigation()} name="experience"><span className={styles.sideNumbers}>02.</span>Experience</a>
           <a href="#projects" className={styles["side-bar-items"]} onClick={()=>handleNavigation()} name="projects"><span className={styles.sideNumbers}>03.</span>Projects</a>
           <a href="#contacts" className={styles["side-bar-items"]} onClick={()=>handleNavigation()} name="contacts"><span className={styles.sideNumbers}>04.</span>Contact</a>
-          <a href="https://drive.google.com/file/d/1LrJkSjzHSbpl2MQMcU2ekEijWZXFPpmP/view?usp=sharing" target="_blank" rel="noopener noreferrer" className={styles.resumeBtn2}>Resume</a>
+          <a href="https://drive.google.com/file/d/1oL3U7tr2otbmZNf6sUh8_89vcPUgRwyP/view" target="_blank" rel="noopener noreferrer" className={styles.resumeBtn2}>Resume</a>
         </div>
 
 
@@ -102,11 +102,11 @@ export default function Home() {
       </div>
 
       <div className={styles.contactWrapper}>
-        <FaFacebook className={styles.linkIcons} />
-        <FaInstagram className={styles.linkIcons} />
-        <FaLinkedin className={styles.linkIcons} />
-        <FaTwitter className={styles.linkIcons} />
-        <FaGithub className={styles.linkIcons} />
+      <a href="https://www.facebook.com/hurlaniyhi/" target="_blank" rel="noopener noreferrer"><FaFacebook className={styles.linkIcons} /></a>
+      <a href="https://www.instagram.com/hurlaniyhi/" target="_blank" rel="noopener noreferrer"><FaInstagram className={styles.linkIcons} /></a>
+      <a href="https://www.linkedin.com/in/ridwan-kolawole-7b4931184/?originalSubdomain=ng" target="_blank" rel="noopener noreferrer"><FaLinkedin className={styles.linkIcons} /></a>
+      <a href="https://twitter.com/MisterJS" target="_blank" rel="noopener noreferrer"><FaTwitter className={styles.linkIcons} /></a>
+      <a href="https://github.com/hurlaniyhi" target="_blank" rel="noopener noreferrer"><FaGithub className={styles.linkIcons} /></a>
         <div className={styles.verticalLine}></div>
       </div>
       <div className={styles.emailWrapper}>
