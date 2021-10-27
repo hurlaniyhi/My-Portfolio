@@ -44,6 +44,8 @@ export default function Home() {
           <span className={styles.letterh}>h</span>
           <span className={styles.letterU}>u</span>
           <span className={styles.letterr}>r</span>
+           {/* <span className={styles.letter_one}>Rhy</span>
+           <span className={styles.letter_two}>dhur</span> */}
         </p>
         <div className={styles.nav_item_container}>
             <a href="#about" className={styles.nav_item} name="about"><span className={styles.numbers}>01.</span>About</a>
@@ -80,7 +82,7 @@ export default function Home() {
             client's problems digitally.
           </p>
           <p className={styles.greeting}>
-            I'm a programming enthusiast that loves being challenged while enjoying my journey towards making the world a betters place through my technological skills in addressing problems
+            A programming enthusiast that loves being challenged while enjoying my journey towards making the world a betters place through my technological skills in addressing problems
             with both web and mobile softwares.
           </p>
           <a href='mailto:olaniyi.jibola152@gmail.com' className={styles.navBtn}>Get in touch</a>
@@ -96,7 +98,7 @@ export default function Home() {
         {/* <Skills /> */}
 
         <p className={styles.footerText}>
-          Design inspired by Brittany Chiang's portfolio. Remixed and built by 
+          Design inspired by Brittany Chiang's portfolio. Redesigned and built by 
           <span className={styles.developer}> Ridwan Kolawole</span>.
         </p>
       </div>

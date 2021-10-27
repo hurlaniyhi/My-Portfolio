@@ -52,6 +52,23 @@ $color-light-blue: #47B2E4;
     }
   }
 
+@keyframes letter_one {
+    0% {
+        color: #ff69b4;
+    }
+    100%{
+        color: #64ffda
+    }
+}
+@keyframes letter_two {
+    0% {
+        color: #64ffda;
+    }
+    100%{
+        color: #ff69b4
+    }
+}
+
 @keyframes color-switchR {
     0% {
       color: $color-theme-text;
@@ -354,6 +371,12 @@ $color-light-blue: #47B2E4;
 }
 .letterr{
     animation: color-switchr 5s ease-in-out infinite alternate-reverse both;
+}
+.letter_one{
+    animation: letter_one 1s ease-in-out infinite alternate-reverse both;
+}
+.letter_two{
+    animation: letter_two 1s ease-in-out infinite alternate-reverse both;
 }
 .contactWrapper{
     position: fixed;

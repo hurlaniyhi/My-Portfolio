@@ -38,10 +38,10 @@ const experienceProvider = [
         position: "Software Developer",
         organization: "@Freelance",
         link: "https://www.linkedin.com/in/ridwan-kolawole-7b4931184/?originalSubdomain=ng",
-        date: "2017 - 2021",
-        workDone: ["I research, design, and build web and mobile applications for organizations following the recommended standard", 
-        "Take up new algorithm tasks and code challenges",
-        "Train and mentor numbers of people regarding software development"]
+        date: "2018 - 2021",
+        workDone: ["I researched, designed, and built web and mobile applications for organizations following the recommended standard", 
+        "Took up new algorithm tasks and code challenges",
+        "Trained and mentored numbers of people regarding software development"]
     }
 ]
 
