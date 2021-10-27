@@ -70,14 +70,14 @@ const Projects = () => {
                     <a href="https://play.google.com/store/search?q=gtword&c=apps" target="_blank" rel="noopener noreferrer"><FiExternalLink className={styles.linkIconLeft} /></a>
                 </div>
                 <div className={styles.projectImageRight}>
-                    <img src="/assets/shopwyse2.png" className={styles.emulatorImageRight} />
+                    <img src="/assets/canva2.png" className={styles.emulatorImageRight} />
                     {/* <div className={styles.overlay}></div> */}
                 </div>
             </div>
 
             <div className={`${styles.projectWrapper} ${styles.projectWrapperReverse}`} data-aos='fade-up-left' data-aos-once={true}>
                 <div className={styles.projectImageLeft}>
-                    <img src="/assets/shopwyse3.png" className={styles.emulatorImageLeft} />
+                    <img src="/assets/canva1.png" className={styles.emulatorImageLeft} />
                     {/* <div className={styles.overlay}></div> */}
                 </div>
                 <div className={styles.projectInfoRight}>
