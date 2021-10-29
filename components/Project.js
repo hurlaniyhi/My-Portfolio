@@ -94,7 +94,7 @@ const Projects = () => {
                         <p className={styles.toolText}>MongoDb</p>
                         <p className={styles.toolText}>Socket.io</p>
                     </div>
-                    <a href="https://drive.google.com/file/d/1KQqhHzfJttZCk23h_-BqibATsFUXthpr/view?usp=sharing" target="_blank" rel="noopener noreferrer"><FiExternalLink className={styles.linkIconRight} /></a>
+                    <a href="https://drive.google.com/file/d/1pPEbomgDKJRmQxgpCkrtM4sKOkzQtz4X/view?usp=sharing" target="_blank" rel="noopener noreferrer"><FiExternalLink className={styles.linkIconRight} /></a>
                 </div>
             </div>
 

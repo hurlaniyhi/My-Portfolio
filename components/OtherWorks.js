@@ -46,7 +46,7 @@ const OtherWorks = () => {
                 </div>
                 <div className={styles.projectContainer} data-aos='zoom-in'>
                     <img src="/assets/stack.svg" className={styles.stackIcon} />
-                    <FiExternalLink className={styles.linkIcon} />
+                    <a href="https://drive.google.com/file/d/1pRg9vZrelncG5n_0UzjVESI2TWzllaeH/view?usp=sharing" target="_blank" rel="noopener noreferrer"><FiExternalLink className={styles.linkIcon} /></a>
                     <p className={styles.projectName}>Rymz</p>
                     <p className={styles.aboutProject}>
                         This is a rhyme mobile app built for children for learning the English letters
@@ -107,7 +107,8 @@ const OtherWorks = () => {
                 </div>
                 <div className={styles.projectContainer} data-aos='zoom-in'>
                     <img src="/assets/stack.svg" className={styles.stackIcon} />
-                    <FiExternalLink className={styles.linkIcon} />
+                    
+                    <a href="https://drive.google.com/file/d/1Ou9A_r8pxNXpPI2CGzbuGQ1auWXqdaqv/view?usp=sharing" target="_blank" rel="noopener noreferrer"><FiExternalLink className={styles.linkIcon} /></a>
                     <p className={styles.projectName}>Robotics in Banking</p>
                     <p className={styles.aboutProject}>
                         An extensive article on how Robots begin to invade banking industry and how promising the future of Robotic technology is in banking.

@@ -29,7 +29,7 @@ const experienceProvider = [
         position: "Software Engineer",
         organization: "@VSprouts Academy",
         link: "https://virtuous-sprout.herokuapp.com/",
-        date: "2019 - till date",
+        date: "2019 - 2021",
         workDone: [
         "I design, build, maintain and fix issues with the organization's platforms",
        ]
