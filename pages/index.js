@@ -37,15 +37,15 @@ export default function Home() {
       </Head>
       <div className={styles.navbar_container}>
         <p className={styles.myLogo}> 
-          <span className={styles.letterR}>R</span>
+          {/* <span className={styles.letterR}>R</span>
           <span className={styles.letterH}>h</span>
           <span className={styles.letterY}>y</span>
           <span className={styles.letterD}>d</span>
           <span className={styles.letterh}>h</span>
           <span className={styles.letterU}>u</span>
-          <span className={styles.letterr}>r</span>
-           {/* <span className={styles.letter_one}>Rhy</span>
-           <span className={styles.letter_two}>dhur</span> */}
+          <span className={styles.letterr}>r</span> */}
+           <span className={styles.letter_one}>Rhy</span>
+           <span className={styles.letter_two}>dhur</span>
         </p>
         <div className={styles.nav_item_container}>
             <a href="#about" className={styles.nav_item} name="about"><span className={styles.numbers}>01.</span>About</a>

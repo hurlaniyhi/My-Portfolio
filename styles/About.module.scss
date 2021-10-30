@@ -86,11 +86,22 @@ $color-theme-text-light: #e1d1e4;
         rgba($color-theme-text-bold, .3),
         rgba($color-theme-text-bold, .3)
       ),
-      url("../assets/pics.jpg");
+      url("../public/assets/ridwan.jpg");
       background-size: cover;
       background-repeat: no-repeat;;
+      background-position: center;
     overflow: hidden;
     z-index: 2;
+    transition: all 0.3s;
+
+    &:hover{
+        background-image: linear-gradient(
+        to right,
+        rgba($color-theme-text-bold, .05),
+        rgba($color-theme-text-bold, .05)
+      ),
+      url("../public/assets/ridwan.jpg");
+    }
 }
 .pics{
     width: 100%;

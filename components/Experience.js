@@ -21,7 +21,7 @@ const Experience = () => {
         return(
             <div>
                 <div className={`${styles.technologiesWrapper}`}>
-                    <FiPlay className={styles.technologyIcon} />
+                    <div><FiPlay className={styles.pointIcon} /></div>
                     <p className={styles.technologyText}>
                        {data}
                     </p>
@@ -42,7 +42,7 @@ const Experience = () => {
                             return(
                                 <div>
                                     <div className={`${styles.technologiesWrapper}`}>
-                                        <FiPlay className={styles.technologyIcon} />
+                                        <div><FiPlay className={styles.pointIcon} /></div>
                                         <p className={styles.technologyText}>
                                             {work}
                                         </p>

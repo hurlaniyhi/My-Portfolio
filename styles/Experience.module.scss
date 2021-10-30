@@ -97,7 +97,7 @@ $color-theme-text-light: #e1d1e4;
     display: block;
     position: absolute;
     background-color: $color-theme-text;
-    width: 0.4rem;
+    width: 0.5rem;
     height: 3rem;
     top: 0;
     left: 50%;
@@ -118,7 +118,7 @@ $color-theme-text-light: #e1d1e4;
     align-items: flex-start;
     padding: 0 0 1.5rem 0;
 }
-.technologyIcon{
+.pointIcon{
     font-size: 2rem;
     color: $color-theme-text-bold;
 }
