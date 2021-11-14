@@ -9,11 +9,11 @@ const Projects = () => {
 
             <div className={styles.projectWrapper} data-aos='fade-down-right' data-aos-once={true}>
                 <div className={styles.projectInfoLeft}>
-                    <p className={`${styles.projectText} ${styles.textLeft}`}>Featured Project</p>
+                    {/* <p className={`${styles.projectText} ${styles.textLeft}`}>Featured Project</p> */}
                     <p className={`${styles.projectName} ${styles.textLeft}`}>Virtuous Sprouts Portal</p>
                     <div className={styles.aboutProjectWrapper}>
                         <div className={styles.aboutProjectLeft}>
-                            <p className={styles.aboutProjectTextLeft}>Virtuous Sprouts Portal is a web app used by Virtuous Sprouts Academy for Student registration, Result upload. e.t.c with the student, teacher and admin dashboard.</p>
+                            <p className={styles.aboutProjectTextLeft}>Virtuous Sprouts Portal is a web app used by Virtuous Sprouts Academy for Student registration, Result upload. e.t.c with the student, teacher and admin dashboards.</p>
                         </div>
                     </div>
                     <div className={styles.projectToolsWrapper}>
@@ -63,7 +63,7 @@ const Projects = () => {
                         </div>
                     </div>
                     <div className={styles.projectToolsWrapper}>
-                        <p className={styles.toolText}>Ionic Angular</p>
+                        <p className={styles.toolText}>Ionic-Angular</p>
                         <p className={styles.toolText}>Asp.net</p>
                         <p className={styles.toolText}>SQL</p>
                     </div>
@@ -81,7 +81,7 @@ const Projects = () => {
                     {/* <div className={styles.overlay}></div> */}
                 </div>
                 <div className={styles.projectInfoRight}>
-                    <p className={`${styles.projectText} ${styles.textRight}`}>Featured Project</p>
+                    {/* <p className={`${styles.projectText} ${styles.textRight}`}>Featured Project</p> */}
                     <p className={`${styles.projectName} ${styles.textRight}`}>Shopwyse</p>
                     <div className={styles.aboutProjectWrapper}>
                         <div className={styles.aboutProjectRight}>

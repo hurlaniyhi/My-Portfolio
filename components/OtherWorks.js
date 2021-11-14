@@ -59,7 +59,7 @@ const OtherWorks = () => {
                 <div className={styles.projectContainer} data-aos='zoom-in'>
                     <img src="/assets/stack.svg" className={styles.stackIcon} />
                     <a href="https://newcoretechnologies.netlify.app/" target="_blank" rel="noopener noreferrer"><FiExternalLink className={styles.linkIcon} /></a>
-                    <p className={styles.projectName}>Newcore technologies Site</p>
+                    <p className={styles.projectName}>Newcore Technologies Site</p>
                     <p className={styles.aboutProject}>
                         This is an online website for Newcore Technologies Ltd.
                     </p>
