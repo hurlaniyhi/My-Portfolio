@@ -63,6 +63,14 @@ $color-theme-text-light: #e1d1e4;
     @media(max-width: 1080px){
         align-self: flex-end;
     }
+    @media(max-width: 600px){
+       height: 45rem;
+       width: 60%
+    }
+    @media(max-width: 315px){
+        width: 40%;
+        height: 35rem
+    }
 }
 .picsFrame{
     width: 29rem;
@@ -71,7 +79,17 @@ $color-theme-text-light: #e1d1e4;
     top: 4.5rem;
     right: 5.5rem;
     border: 1px solid $color-theme-text-bold;
-    border-radius: .5rem
+    border-radius: .5rem;
+    transition: all .2s;
+
+    @media(max-width: 600px){
+        width: 35rem;
+        height: 36rem
+    }
+    @media(max-width: 315px){
+        width: 29rem;
+        height: 30rem
+    }
 }
 .picsWrapper{
     width: 29rem;
@@ -101,6 +119,20 @@ $color-theme-text-light: #e1d1e4;
         rgba($color-theme-text-bold, .05)
       ),
       url("../public/assets/ridwan.jpg");
+    }
+
+    &:hover ~ .picsFrame{
+        top: 5rem;
+        right: 4.5rem;
+    }
+
+    @media(max-width: 600px){
+        width: 35rem;
+        height: 36rem
+    }
+    @media(max-width: 315px){
+        width: 29rem;
+        height: 30rem
     }
 }
 .pics{
