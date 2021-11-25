@@ -76,9 +76,9 @@ $color-theme-text-light: #e1d1e4;
     width: 29rem;
     height: 30rem;
     position: absolute;
-    top: 4.5rem;
-    right: 5.5rem;
-    border: 1px solid $color-theme-text-bold;
+    top: 5rem;
+    right: 5rem;
+    border: 2px solid $color-theme-text-bold;
     border-radius: .5rem;
     transition: all .2s;
 
@@ -122,8 +122,8 @@ $color-theme-text-light: #e1d1e4;
     }
 
     &:hover ~ .picsFrame{
-        top: 5rem;
-        right: 4.5rem;
+        top: 4.5rem;
+        right: 5.5rem;
     }
 
     @media(max-width: 600px){

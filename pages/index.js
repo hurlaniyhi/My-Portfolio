@@ -118,11 +118,11 @@ export default function Home() {
       </div>
 
       <div className={styles.contactWrapper}>
-      <a href="https://www.facebook.com/hurlaniyhi/" target="_blank" rel="noopener noreferrer"><FaFacebook className={styles.linkIcons} /></a>
-      <a href="https://www.instagram.com/hurlaniyhi/" target="_blank" rel="noopener noreferrer"><FaInstagram className={styles.linkIcons} /></a>
-      <a href="https://www.linkedin.com/in/ridwan-kolawole-7b4931184/?originalSubdomain=ng" target="_blank" rel="noopener noreferrer"><FaLinkedin className={styles.linkIcons} /></a>
-      <a href="https://twitter.com/MisterJS" target="_blank" rel="noopener noreferrer"><FaTwitter className={styles.linkIcons} /></a>
-      <a href="https://github.com/hurlaniyhi" target="_blank" rel="noopener noreferrer"><FaGithub className={styles.linkIcons} /></a>
+        <a href="https://www.facebook.com/hurlaniyhi/" target="_blank" rel="noopener noreferrer"><FaFacebook className={styles.linkIcons} /></a>
+        <a href="https://www.instagram.com/hurlaniyhi/" target="_blank" rel="noopener noreferrer"><FaInstagram className={styles.linkIcons} /></a>
+        <a href="https://www.linkedin.com/in/ridwan-kolawole-7b4931184/?originalSubdomain=ng" target="_blank" rel="noopener noreferrer"><FaLinkedin className={styles.linkIcons} /></a>
+        <a href="https://twitter.com/MisterJS" target="_blank" rel="noopener noreferrer"><FaTwitter className={styles.linkIcons} /></a>
+        <a href="https://github.com/hurlaniyhi" target="_blank" rel="noopener noreferrer"><FaGithub className={styles.linkIcons} /></a>
         <div className={styles.verticalLine}></div>
       </div>
       <div className={styles.emailWrapper}>
