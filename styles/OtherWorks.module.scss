@@ -54,11 +54,15 @@ $color-theme-background-light: #321f56;
     border-radius: .6rem;
     padding: 2rem 1.8rem;
     position: relative;
+    transition: all .3s;
+
+    &:hover{
+        margin-top: -0.5rem;
+    }
 
     @media(max-width: 1300px){
         width: 30.5%
     }
-
     @media(max-width: 1230px){
         width: 40%
     }
@@ -90,6 +94,11 @@ $color-theme-background-light: #321f56;
     right: 2rem;
     color: $color-theme-text;
     font-size: 3rem;
+    transition: all .2s;
+
+    &:hover{
+        color: $color-theme-text-bold
+    }
 }
 .projectName{
     font-size: 2.4rem;

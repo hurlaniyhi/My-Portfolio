@@ -68,6 +68,14 @@ $color-light-blue: #47B2E4;
         color: #ff69b4
     }
 }
+@keyframes letter_logo {
+    0% {
+        background-color: #ff69b4;
+    }
+    100%{
+        background-color: #64ffda
+    }
+}
 
 @keyframes color-switchR {
     0% {
@@ -337,14 +345,30 @@ $color-light-blue: #47B2E4;
     padding-right: .5rem;
     font-size: 1.4rem
 }
+
+.mainLogo{
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    top: 50%;
+    left: -2rem;
+    transform: translateY(-50%);
+    animation: letter_logo 1s ease-in-out infinite alternate-reverse both;
+    -webkit-mask: url("../public/assets/Rhydur.svg") no-repeat center;
+    mask: url("../public/assets/Rhydur.svg") no-repeat center;
+    
+}
 .myLogo{
     //font-family: cursive;
-    text-transform: uppercase;
+    font-family: proxima-nova, helvetica, arial, sans-serif;
+    text-transform: capitalize;
     font-size: 3rem;
     font-weight: bold;
     position: fixed; 
     top: 2rem;
-    left: 3rem;
+    left: 8rem; //3
     padding: 0;
     margin: 0;
     color: $color-theme-text;
