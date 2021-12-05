@@ -270,6 +270,10 @@ $color-theme-text-light: #e1d1e4;
     margin-top: 1rem;
     cursor: url('../public/assets/cursorfill24.png'), auto;
 
+    &:hover{
+        color: $color-theme-text-bold;
+    }
+    
     @media(max-width: 850px){
         margin-bottom: 3.5rem;
     }
@@ -280,6 +284,10 @@ $color-theme-text-light: #e1d1e4;
     float: right;
     margin-top: 1rem;
     cursor: url('../public/assets/cursorfill24.png'), auto;
+
+    &:hover{
+        color: $color-theme-text-bold;
+    }
 
     @media(max-width: 850px){
         margin-bottom: 3.5rem;
