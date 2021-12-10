@@ -6,7 +6,6 @@ const OtherWorks = () => {
         <div className={styles.container}>
             <p className={styles.title}>Other Noteworthy Projects</p>
             <p className={styles.description}>Projects &nbsp; | &nbsp; Articles &nbsp; | &nbsp; Open Source</p>
-
             <div className={styles. projectsWrapper}>
                 <div className={styles.projectContainer} data-aos='zoom-in'>
                     <img src="/assets/stack.svg" className={styles.stackIcon} />

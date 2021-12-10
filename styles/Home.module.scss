@@ -11,6 +11,15 @@ $color-deep-blue: #293C5F;
 $color-white: #fff;
 $color-light-blue: #47B2E4;
 
+@mixin clean-typewriter-animation {
+    white-space: initial; //word-wrap: break-word
+    letter-spacing: none;
+    animation: none;
+    overflow: auto;
+    width: auto;
+    border-right: none;
+  }  
+
 
 @-webkit-keyframes up-down {
     0% {
@@ -249,6 +258,18 @@ $color-light-blue: #47B2E4;
     100%{
         color: #bfc1c2
     }
+  }
+
+   /* The typing effect */
+   @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: $color-theme-text-bold }
   }
 
 
@@ -516,12 +537,48 @@ $color-light-blue: #47B2E4;
 .slogan{
     font-size: 3.5rem;
     color: $color-theme-text;
-    //margin-top: -1rem;
     font-weight: 300;
+
+    //Added for Animation
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    //border-right: .5rem solid $color-theme-text-bold; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    letter-spacing: .6rem; /* Adjust as needed */
+    animation: 
+      typing 6s infinite alternate-reverse both, //steps(50, end)
+      //blink-caret .5s step-end infinite
+      ;
+      width: 100%;
+
+    @media(max-width: 1700px) {
+        letter-spacing: .2rem
+    }
+    @media(max-width: 1520px) {
+       letter-spacing: .1rem
+    }
+    @media(max-width: 1500px) {
+        letter-spacing: .07rem
+    }
+
+    @media(max-width: 1400px) {
+        @include clean-typewriter-animation 
+    }
+
 
     @media(max-width: 500px) {
         font-size: 2.5rem;
-        margin-top: 0
+        margin-top: 0;
+    }
+    @media(max-width: 450px) {
+        white-space: nowrap;
+        letter-spacing: .07rem;
+        animation: typing 6s infinite alternate-reverse both;
+        overflow: hidden;
+        width: 100%;
+       // border-right: .5rem solid $color-theme-text-bold; 
+    }
+    @media (max-width: 400px){
+        @include clean-typewriter-animation
     }
 }
 .navBtn{
