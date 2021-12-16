@@ -51,7 +51,7 @@ export default function Home() {
       </div>
       <div className={styles.navbar_container}>
       <div className={styles.mainLogo}></div>
-        <p className={styles.myLogo}> 
+        <p className={styles.myLogo} data-aos='zoom-in' data-aos-delay='3000' data-aos-once={true} data-aos-duration="1300"> 
           {/* <span className={styles.letterR}>R</span>
           <span className={styles.letterH}>h</span>
           <span className={styles.letterY}>y</span>
@@ -62,7 +62,7 @@ export default function Home() {
            <span className={styles.letter_one}>Rhy</span>
            <span className={styles.letter_two}>dhur</span>
         </p>
-        <div className={styles.nav_item_container}>
+        <div className={styles.nav_item_container} data-aos='zoom-in' data-aos-delay='3000' data-aos-once={true} data-aos-duration="1300">
             <a href="#about" className={styles.nav_item} name="about"><span className={styles.numbers}>01.</span>About</a>
             <a href="#experience" className={styles.nav_item} name="projects"><span className={styles.numbers}>02.</span>Experience</a>
             <a href="#projects" className={styles.nav_item} name="FAQ"><span className={styles.numbers}>03.</span>Projects</a>
