@@ -117,7 +117,7 @@ const OtherWorks = () => {
                         <p className={styles.toolName}>Canva</p>
                     </div>
                 </div>
-                <div className={styles.projectContainer} data-aos='zoom-in'>
+                {/* <div className={styles.projectContainer} data-aos='zoom-in'>
                     <img src="/assets/stack.svg" className={styles.stackIcon} />
                     <a href="https://github.com/hurlaniyhi/Unit-Testing-With-Mocha" target="_blank" rel="noopener noreferrer"><FiExternalLink className={styles.linkIcon} /></a>
                     <p className={styles.projectName}>CI/CD with Travic CI</p>
@@ -128,6 +128,18 @@ const OtherWorks = () => {
                         <p className={styles.toolName}>Node.js</p>
                         <p className={styles.toolName}>Mocha</p>
                         <p className={styles.toolName}>Travis CI</p>
+                    </div>
+                </div> */}
+                <div className={styles.projectContainer} data-aos='zoom-in'>
+                    <img src="/assets/stack.svg" className={styles.stackIcon} />
+                    <a href="https://swedbank-personal-loan.netlify.app" target="_blank" rel="noopener noreferrer"><FiExternalLink className={styles.linkIcon} /></a>
+                    <p className={styles.projectName}>Personal Loan</p>
+                    <p className={styles.aboutProject}>
+                        A SwedBank web app prototype for personal loan application.
+                    </p>
+                    <div className={styles.projectToolsWrapper}>
+                        <p className={styles.toolName}>React.js</p>
+                        <p className={styles.toolName}>AOS</p>
                     </div>
                 </div>
             </div>
