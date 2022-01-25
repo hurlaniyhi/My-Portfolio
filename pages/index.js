@@ -1,4 +1,5 @@
 import {useEffect, useState} from 'react'
+import { browserName } from 'react-device-detect'
 import Head from 'next/head'
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaGithub} from "react-icons/fa";
 import About from '../components/About'
@@ -50,7 +51,7 @@ export default function Home() {
         <img src="/assets/logoGif.gif" className={styles.logoGif} />
       </div>
       <div className={styles.navbar_container}>
-      <div className={styles.mainLogo}></div>
+      { browserName === "Chrome" ? null : <div className={styles.mainLogo}></div>}
         <p className={styles.myLogo} data-aos='zoom-in' data-aos-delay='3000' data-aos-once={true} data-aos-duration="1300"> 
           {/* <span className={styles.letterR}>R</span>
           <span className={styles.letterH}>h</span>
