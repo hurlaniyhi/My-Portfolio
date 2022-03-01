@@ -55,7 +55,7 @@ const About = () => {
                             </div>
                             <div className={`${styles.technologiesWrapper} ${styles.technologiesWrapperPlus}`}>
                                 <FiPlay className={styles.technologyIcon} />
-                                <p className={styles.technologyText}>C#</p>
+                                <p className={styles.technologyText}>Typescript</p>
                             </div>
                         </div>
                        
