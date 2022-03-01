@@ -65,11 +65,11 @@ const Experience = () => {
                         <div className={styles.levelBar} style={{top: levelBar}}></div>
                     </div>
                     <p className={styles.companies} style={{color: experience.exp1}} onClick={()=> handleExperience(0, '0.9rem', 'exp1')}>Access Bank Plc</p>
-                     <p className={styles.companies} style={{color: experience.exp2}} onClick={()=> handleExperience(1, '0.9rem', 'exp2')}>GTBank Ltd</p>
-                     <p className={styles.companies} style={{color: experience.exp3}} onClick={()=> handleExperience(2, '4.4rem', 'exp3')}>GTB (Fintech)</p>
-                     <p className={styles.companies} style={{color: experience.exp4}} onClick={()=> handleExperience(3, '8rem', 'exp4')}>Newcore Tech.</p>
-                     <p className={styles.companies} style={{color: experience.exp5}} onClick={()=> handleExperience(4, '11.4rem', 'exp5')}>VSProuts</p>
-                     <p className={styles.companies} style={{color: experience.exp6}} onClick={()=> handleExperience(5, '15rem', 'exp6')}>Freelance</p>
+                     <p className={styles.companies} style={{color: experience.exp2}} onClick={()=> handleExperience(1, '4.4rem', 'exp2')}>GTBank Ltd</p>
+                     <p className={styles.companies} style={{color: experience.exp3}} onClick={()=> handleExperience(2, '7.8rem', 'exp3')}>GTB (Fintech)</p>
+                     <p className={styles.companies} style={{color: experience.exp4}} onClick={()=> handleExperience(3, '11.2rem', 'exp4')}>Newcore Tech.</p>
+                     <p className={styles.companies} style={{color: experience.exp5}} onClick={()=> handleExperience(4, '14.7rem', 'exp5')}>VSProuts</p>
+                     <p className={styles.companies} style={{color: experience.exp6}} onClick={()=> handleExperience(5, '18.4rem', 'exp6')}>Freelance</p>
                  </div>
                  <div className={styles.workDetails}>
                      <p className={styles.roleText}> {experienceProvider[index].position} <a href={`${experienceProvider[index].link}`} target="_blank" rel="noopener noreferrer" className={styles.companyName}>{experienceProvider[index].organization}</a></p>
