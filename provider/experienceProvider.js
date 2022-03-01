@@ -1,11 +1,20 @@
 const experienceProvider = [
     {
         position: "Software Engineer",
+        organization: "@Access Bank",
+        link: "https://www.gtbank.com/",
+        date: "2022 - till date",
+        workDone: ["I am working in the app development unit, where we add features, fix issues and maintain the bank's corporate app (Primus plus)", 
+        "I am also working on revamping the bank's corporate app admin to React using Typescript, SCSS and Styled components",
+        ]
+    },
+    {
+        position: "Software Engineer",
         organization: "@Guaranty Trust Ltd",
         link: "https://www.gtbank.com/",
-        date: "2021 - till date",
-        workDone: ["I am working in a mobile app development team, where we develop mobile apps, modify, fix issues and maintain the bank's mobile apps which are GTWorld, GTMobile and OrangeToolBox.", 
-        "Work in a scrum team to develop products taking customers satisfaction as the highest priority",
+        date: "2021 - 2022",
+        workDone: ["I worked in a mobile app development team, where we developed mobile apps, modified, fixed issues and maintain the bank's mobile apps which are GTWorld, GTMobile and OrangeToolBox.", 
+        "Worked in a scrum team to develop products taking customers satisfaction as the highest priority",
         "Research and learn new skills"]
     },
     {
