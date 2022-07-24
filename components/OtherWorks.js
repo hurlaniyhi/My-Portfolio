@@ -9,17 +9,18 @@ const OtherWorks = () => {
             <div className={styles. projectsWrapper}>
                 <div className={styles.projectContainer} data-aos='zoom-in'>
                     <img src="/assets/stack.svg" className={styles.stackIcon} />
-                    <a href="https://check-d-deck.herokuapp.com" target="_blank" rel="noopener noreferrer"><FiExternalLink className={styles.linkIcon} /></a>
-                    <p className={styles.projectName}>Staff Manager App</p>
+                    <a href="https://virtuous-sprout.herokuapp.com" target="_blank" rel="noopener noreferrer"><FiExternalLink className={styles.linkIcon} /></a>
+                    <p className={styles.projectName}>Virtuous Sprouts</p>
                     <p className={styles.aboutProject}>
-                        This is a web application used by HR/Admin to manage their company departments, Staff, 
-                        activities, documents e.t.c.
+                        This is a web application used by Virtuous Sprouts for student registration and result portal
                     </p>
                     <div className={styles.projectToolsWrapper}>
                         <p className={styles.toolName}>React</p>
+                        <p className={styles.toolName}>Scss</p>
                         <p className={styles.toolName}>Node</p>
                         <p className={styles.toolName}>MongoDb</p>
                     </div>
+                    {/* https://check-d-deck.herokuapp.com */}
                 </div>
                 <div className={styles.projectContainer} data-aos='zoom-in'>
                     <img src="/assets/stack.svg" className={styles.stackIcon} />
@@ -95,14 +96,16 @@ const OtherWorks = () => {
                 </div> */}
                 <div className={styles.projectContainer} data-aos='zoom-in'>
                     <img src="/assets/stack.svg" className={styles.stackIcon} />
-                    <a href="https://play.google.com/store/apps/details?id=com.vanso.gtbankapp" target="_blank" rel="noopener noreferrer"><FiExternalLink className={styles.linkIcon} /></a>
-                    <p className={styles.projectName}>GTMobile</p>
+                    <a href="https://gtautoresponse.herokuapp.com" target="_blank" rel="noopener noreferrer"><FiExternalLink className={styles.linkIcon} /></a>
+                    <p className={styles.projectName}>Auto Email Response</p>
                     <p className={styles.aboutProject}>
-                        A GTBank mobile app used by customers to carry out all banking activities including account opening, requests and transactions.
+                        This is a web application that allows GTBank staff to personalize and send already written mails to developers registered on GTBank developers' portal.
                     </p>
                     <div className={styles.projectToolsWrapper}>
-                        <p className={styles.toolName}>Native</p>
-                        <p className={styles.toolName}>Asp.net</p>
+                        <p className={styles.toolName}>React</p>
+                        <p className={styles.toolName}>Scss</p>
+                        <p className={styles.toolName}>Node.js</p>
+                        <p className={styles.toolName}>MongoDb</p>
                     </div>
                 </div>
                 <div className={styles.projectContainer} data-aos='zoom-in'>

@@ -6,7 +6,7 @@ import experienceProvider from '../provider/experienceProvider'
 
 const Experience = () => {
 
-    let initialExperienceState = {exp1: "#e492f5", exp2: "#e492f5", exp3: "#e492f5", exp4: "#e492f5", exp5: "#e492f5", exp6: "#e492f5"}
+    let initialExperienceState = {exp1: "#e492f5", exp2: "#e492f5", exp3: "#e492f5", exp4: "#e492f5", exp5: "#e492f5", exp6: "#e492f5", exp7: "#e492f5", exp8: "#e492f5"}
     const [index, setIndex] = useState(0)
     const [levelBar, setLevelBar] = useState('0.9rem')
     const [experience, setExperience] = useState(initialExperienceState)
@@ -64,12 +64,14 @@ const Experience = () => {
                     <div className={styles.verticalLine}>
                         <div className={styles.levelBar} style={{top: levelBar}}></div>
                     </div>
-                    <p className={styles.companies} style={{color: experience.exp1}} onClick={()=> handleExperience(0, '0.9rem', 'exp1')}>Access Bank Plc</p>
-                     <p className={styles.companies} style={{color: experience.exp2}} onClick={()=> handleExperience(1, '4.4rem', 'exp2')}>GTBank Ltd</p>
-                     <p className={styles.companies} style={{color: experience.exp3}} onClick={()=> handleExperience(2, '7.8rem', 'exp3')}>GTB (Fintech)</p>
-                     <p className={styles.companies} style={{color: experience.exp4}} onClick={()=> handleExperience(3, '11.2rem', 'exp4')}>Newcore Tech.</p>
-                     <p className={styles.companies} style={{color: experience.exp5}} onClick={()=> handleExperience(4, '14.7rem', 'exp5')}>VSProuts</p>
-                     <p className={styles.companies} style={{color: experience.exp6}} onClick={()=> handleExperience(5, '18.4rem', 'exp6')}>Freelance</p>
+                    <p className={styles.companies} style={{color: experience.exp1}} onClick={()=> handleExperience(0, '0.9rem', 'exp1')}>Flutterwave</p>
+                    <p className={styles.companies} style={{color: experience.exp2}} onClick={()=> handleExperience(1, '4.4rem', 'exp2')}>Humexid</p>
+                    <p className={styles.companies} style={{color: experience.exp3}} onClick={()=> handleExperience(2, '7.8rem', 'exp3')}>Access Bank Plc</p>
+                    <p className={styles.companies} style={{color: experience.exp4}} onClick={()=> handleExperience(3, '11.2rem', 'exp4')}>GTBank Ltd</p>
+                    <p className={styles.companies} style={{color: experience.exp5}} onClick={()=> handleExperience(4, '14.7rem', 'exp5')}>GTB (Fintech)</p>
+                    <p className={styles.companies} style={{color: experience.exp6}} onClick={()=> handleExperience(5, '18.4rem', 'exp6')}>Newcore Tech.</p>
+                    <p className={styles.companies} style={{color: experience.exp7}} onClick={()=> handleExperience(6, '22.1rem', 'exp7')}>VSProuts</p>
+                    <p className={styles.companies} style={{color: experience.exp8}} onClick={()=> handleExperience(7, '25.8rem', 'exp8')}>Freelance</p>
                  </div>
                  <div className={styles.workDetails}>
                      <p className={styles.roleText}> {experienceProvider[index].position} <a href={`${experienceProvider[index].link}`} target="_blank" rel="noopener noreferrer" className={styles.companyName}>{experienceProvider[index].organization}</a></p>

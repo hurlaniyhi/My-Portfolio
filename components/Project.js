@@ -10,23 +10,25 @@ const Projects = () => {
             <div className={styles.projectWrapper} data-aos='fade-down-right' data-aos-once={true}>
                 <div className={styles.projectInfoLeft}>
                     {/* <p className={`${styles.projectText} ${styles.textLeft}`}>Featured Project</p> */}
-                    <p className={`${styles.projectName} ${styles.textLeft}`}>Virtuous Sprouts Portal</p>
+                    <p className={`${styles.projectName} ${styles.textLeft}`}>Crendly</p>
                     <div className={styles.aboutProjectWrapper}>
                         <div className={styles.aboutProjectLeft}>
-                            <p className={styles.aboutProjectTextLeft}>Virtuous Sprouts Portal is a web app used by Virtuous Sprouts Academy for Student registration, Result upload. e.t.c with the student, teacher and admin dashboards.</p>
+                            <p className={styles.aboutProjectTextLeft}>A platform for social lending. it brings lenders and borrowers together to make lending easier while also handling the processing, payment and disbursement</p>
                         </div>
                     </div>
                     <div className={styles.projectToolsWrapper}>
                         <p className={styles.toolText}>React.js</p>
+                        <p className={styles.toolText}>Typescript</p>
+                        <p className={styles.toolText}>Styled-Component</p>
                         <p className={styles.toolText}>SCSS</p>
-                        <p className={styles.toolText}>Node.js</p>
-                        <p className={styles.toolText}>MongoDb</p>
+                        <p className={styles.toolText}>Asp.net</p>
                     </div>
-                    <a href="https://virtuous-sprout.herokuapp.com" target="_blank" rel="noopener noreferrer"><FiExternalLink className={styles.linkIconLeft} /></a>
+                    <a href="https://crendly.com" target="_blank" rel="noopener noreferrer"><FiExternalLink className={styles.linkIconLeft} /></a>
                 </div>
                 <div className={styles.projectImageRight}>
                     {/* <img src="/assets/vsprout3.png" className={styles.projectImage} /> */}
                     {/* <div className={styles.overlay}></div> */}
+                    {/* https://virtuous-sprout.herokuapp.com */}
                 </div>
             </div>
 
@@ -37,10 +39,10 @@ const Projects = () => {
                 </div>
                 <div className={styles.projectInfoRight}>
                     <p className={`${styles.projectText} ${styles.textRight}`}>Featured Project</p>
-                    <p className={`${styles.projectName} ${styles.textRight}`}>Auto Email Response</p>
+                    <p className={`${styles.projectName} ${styles.textRight}`}>Primus Plus</p>
                     <div className={styles.aboutProjectWrapper}>
                         <div className={styles.aboutProjectRight}>
-                            <p className={styles.aboutProjectTextRight}>This is a web application that allows GTBank staff to personalize and send already written mails to developers registered on GTBank developers' portal.</p>
+                            <p className={styles.aboutProjectTextRight}>A fully integrated, secure web-based platform designed to provide Access bank corporate clients with a one-point access to banking solutions via an intuitive user interface.</p>
                         </div>
                     </div>
                     <div className={styles.projectToolsWrapper}>
@@ -49,7 +51,7 @@ const Projects = () => {
                         <p className={styles.toolText}>Node.js</p>
                         <p className={styles.toolText}>MongoDb</p>
                     </div>
-                    <a href="https://gtautoresponse.herokuapp.com" target="_blank" rel="noopener noreferrer"><FiExternalLink className={styles.linkIconRight} /></a>
+                    <a href="https://www.accessbankplc.com/primus/index.html" target="_blank" rel="noopener noreferrer"><FiExternalLink className={styles.linkIconRight} /></a>
                 </div>
             </div>
 

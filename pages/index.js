@@ -68,7 +68,7 @@ export default function Home() {
             <a href="#experience" className={styles.nav_item} name="projects"><span className={styles.numbers}>02.</span>Experience</a>
             <a href="#projects" className={styles.nav_item} name="FAQ"><span className={styles.numbers}>03.</span>Projects</a>
             <a href="#contacts" className={styles.nav_item} name="contacts"><span className={styles.numbers}>04.</span>Contact</a>
-            <a href="https://drive.google.com/file/d/1AuzYNYmo1wz3-yJhKQ9QKhWxv0k-YCqy/view?usp=sharing" target="_blank" rel="noopener noreferrer" className={styles.resumeBtn}>Resume</a>
+            <a href="https://drive.google.com/file/d/1VGcJuuRTpI8Uhmi9lJT6m3SwMq9MMcxU/view?usp=sharing" target="_blank" rel="noopener noreferrer" className={styles.resumeBtn}>Resume</a>
         </div>
       </div>
 
@@ -83,7 +83,7 @@ export default function Home() {
           <a href="#experience" className={styles["side-bar-items"]} onClick={()=>handleNavigation()} name="experience"><span className={styles.sideNumbers}>02.</span>Experience</a>
           <a href="#projects" className={styles["side-bar-items"]} onClick={()=>handleNavigation()} name="projects"><span className={styles.sideNumbers}>03.</span>Projects</a>
           <a href="#contacts" className={styles["side-bar-items"]} onClick={()=>handleNavigation()} name="contacts"><span className={styles.sideNumbers}>04.</span>Contact</a>
-          <a href="https://drive.google.com/file/d/1AuzYNYmo1wz3-yJhKQ9QKhWxv0k-YCqy/view?usp=sharing" target="_blank" rel="noopener noreferrer" className={styles.resumeBtn2}>Resume</a>
+          <a href="https://drive.google.com/file/d/1VGcJuuRTpI8Uhmi9lJT6m3SwMq9MMcxU/view?usp=sharing" target="_blank" rel="noopener noreferrer" className={styles.resumeBtn2}>Resume</a>
         </div>
 
 
