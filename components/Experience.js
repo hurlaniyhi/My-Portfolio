@@ -64,14 +64,13 @@ const Experience = () => {
                     <div className={styles.verticalLine}>
                         <div className={styles.levelBar} style={{top: levelBar}}></div>
                     </div>
-                    <p className={styles.companies} style={{color: experience.exp1}} onClick={()=> handleExperience(0, '0.9rem', 'exp1')}>Flutterwave</p>
-                    <p className={styles.companies} style={{color: experience.exp2}} onClick={()=> handleExperience(1, '4.4rem', 'exp2')}>Humexid</p>
-                    <p className={styles.companies} style={{color: experience.exp3}} onClick={()=> handleExperience(2, '7.8rem', 'exp3')}>Access Bank Plc</p>
-                    <p className={styles.companies} style={{color: experience.exp4}} onClick={()=> handleExperience(3, '11.2rem', 'exp4')}>GTBank Ltd</p>
-                    <p className={styles.companies} style={{color: experience.exp5}} onClick={()=> handleExperience(4, '14.7rem', 'exp5')}>GTB (Fintech)</p>
-                    <p className={styles.companies} style={{color: experience.exp6}} onClick={()=> handleExperience(5, '18.4rem', 'exp6')}>Newcore Tech.</p>
-                    <p className={styles.companies} style={{color: experience.exp7}} onClick={()=> handleExperience(6, '22.1rem', 'exp7')}>VSProuts</p>
-                    <p className={styles.companies} style={{color: experience.exp8}} onClick={()=> handleExperience(7, '25.8rem', 'exp8')}>Freelance</p>
+                    <p className={styles.companies} style={{color: experience.exp1}} onClick={()=> handleExperience(0, '0.9rem', 'exp1')}>Appzone</p>
+                    <p className={styles.companies} style={{color: experience.exp2}} onClick={()=> handleExperience(1, '4.4rem', 'exp2')}>Flutterwave</p>
+                    <p className={styles.companies} style={{color: experience.exp3}} onClick={()=> handleExperience(2, '7.8rem', 'exp3')}>Humexid</p>
+                    <p className={styles.companies} style={{color: experience.exp4}} onClick={()=> handleExperience(3, '11.2rem', 'exp4')}>Access Bank Plc</p>
+                    <p className={styles.companies} style={{color: experience.exp5}} onClick={()=> handleExperience(4, '14.7rem', 'exp5')}>GTBank Ltd</p>
+                    <p className={styles.companies} style={{color: experience.exp6}} onClick={()=> handleExperience(5, '18.4rem', 'exp6')}>VSProuts</p>
+                    <p className={styles.companies} style={{color: experience.exp7}} onClick={()=> handleExperience(6, '22.1rem', 'exp7')}>Newcore Tech.</p>
                  </div>
                  <div className={styles.workDetails}>
                      <p className={styles.roleText}> {experienceProvider[index].position} <a href={`${experienceProvider[index].link}`} target="_blank" rel="noopener noreferrer" className={styles.companyName}>{experienceProvider[index].organization}</a></p>

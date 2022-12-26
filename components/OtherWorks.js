@@ -9,7 +9,7 @@ const OtherWorks = () => {
             <div className={styles. projectsWrapper}>
                 <div className={styles.projectContainer} data-aos='zoom-in'>
                     <img src="/assets/stack.svg" className={styles.stackIcon} />
-                    <a href="https://virtuous-sprout.herokuapp.com" target="_blank" rel="noopener noreferrer"><FiExternalLink className={styles.linkIcon} /></a>
+                    <a href="https://virtuoussprouts.org" target="_blank" rel="noopener noreferrer"><FiExternalLink className={styles.linkIcon} /></a>
                     <p className={styles.projectName}>Virtuous Sprouts</p>
                     <p className={styles.aboutProject}>
                         This is a web application used by Virtuous Sprouts for student registration and result portal
@@ -59,7 +59,7 @@ const OtherWorks = () => {
                 </div>
                 <div className={styles.projectContainer} data-aos='zoom-in'>
                     <img src="/assets/stack.svg" className={styles.stackIcon} />
-                    <a href="https://newcoretechnologies.netlify.app/" target="_blank" rel="noopener noreferrer"><FiExternalLink className={styles.linkIcon} /></a>
+                    <a href="https://newcoretechnologies.com" target="_blank" rel="noopener noreferrer"><FiExternalLink className={styles.linkIcon} /></a>
                     <p className={styles.projectName}>Newcore Technologies Site</p>
                     <p className={styles.aboutProject}>
                         This is an online website for Newcore Technologies Ltd.

@@ -104,10 +104,10 @@ $color-theme-text-light: #e1d1e4;
         rgba($color-theme-text-bold, .3),
         rgba($color-theme-text-bold, .3)
       ),
-      url("../public/assets/R-pics.jpg");
+      url("../public/assets/portfolio-pics.jpg");
       background-size: cover;
       background-repeat: no-repeat;;
-      background-position: center;
+      background-position: top;
     overflow: hidden;
     z-index: 2;
     transition: all 0.3s;
@@ -118,7 +118,7 @@ $color-theme-text-light: #e1d1e4;
         rgba($color-theme-text-bold, .05),
         rgba($color-theme-text-bold, .05)
       ),
-      url("../public/assets/R-pics.jpg");
+      url("../public/assets/portfolio-pics.jpg");
     }
 
     &:hover ~ .picsFrame{

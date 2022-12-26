@@ -41,10 +41,10 @@ const About = () => {
                         </div>
                         
                         <div className={styles.technologiesContainer}>
-                            <div className={`${styles.technologiesWrapper} ${styles.technologiesWrapperPlus}`}>
+                            {/* <div className={`${styles.technologiesWrapper} ${styles.technologiesWrapperPlus}`}>
                                 <FiPlay className={styles.technologyIcon} />
                                 <p className={styles.technologyText}>Vue.js</p>
-                            </div>
+                            </div> */}
                             <div className={`${styles.technologiesWrapper} ${styles.technologiesWrapperPlus}`}>
                                 <FiPlay className={styles.technologyIcon} />
                                 <p className={styles.technologyText}>HTML & SCSS</p>
