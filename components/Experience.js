@@ -64,8 +64,8 @@ const Experience = () => {
                     <div className={styles.verticalLine}>
                         <div className={styles.levelBar} style={{top: levelBar}}></div>
                     </div>
-                    <p className={styles.companies} style={{color: experience.exp1}} onClick={()=> handleExperience(0, '0.9rem', 'exp1')}>Appzone</p>
-                    <p className={styles.companies} style={{color: experience.exp2}} onClick={()=> handleExperience(1, '4.4rem', 'exp2')}>Flutterwave</p>
+                    <p className={styles.companies} style={{color: experience.exp1}} onClick={()=> handleExperience(0, '0.9rem', 'exp1')}>Flutterwave</p>
+                    <p className={styles.companies} style={{color: experience.exp2}} onClick={()=> handleExperience(1, '4.4rem', 'exp2')}>Appzone</p>
                     <p className={styles.companies} style={{color: experience.exp3}} onClick={()=> handleExperience(2, '7.8rem', 'exp3')}>Humexid</p>
                     <p className={styles.companies} style={{color: experience.exp4}} onClick={()=> handleExperience(3, '11.2rem', 'exp4')}>Access Bank Plc</p>
                     <p className={styles.companies} style={{color: experience.exp5}} onClick={()=> handleExperience(4, '14.7rem', 'exp5')}>GTBank Ltd</p>
