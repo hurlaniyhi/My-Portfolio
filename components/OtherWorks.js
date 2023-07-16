@@ -17,7 +17,7 @@ const OtherWorks = () => {
                     <div className={styles.projectToolsWrapper}>
                         <p className={styles.toolName}>React</p>
                         <p className={styles.toolName}>Scss</p>
-                        <p className={styles.toolName}>Node</p>
+                        <p className={styles.toolName}>Node.Js</p>
                         <p className={styles.toolName}>MongoDb</p>
                     </div>
                     {/* https://check-d-deck.herokuapp.com */}
@@ -33,16 +33,28 @@ const OtherWorks = () => {
                         <p className={styles.toolName}>SQL</p>
                     </div>
                 </div>
+                 <div className={styles.projectContainer} data-aos='zoom-in'>
+                    <img src="/assets/stack.svg" className={styles.stackIcon} />
+                    <a href="https://app.flutterwave.com/register" target="_blank" rel="noopener noreferrer"><FiExternalLink className={styles.linkIcon} /></a>
+                    <p className={styles.projectName}>Flutterwave For Business</p>
+                    <p className={styles.aboutProject}>This is an application which helps merchants sell online, process payment and grow their business.</p>
+                    <div className={styles.projectToolsWrapper}>
+                        <p className={styles.toolName}>Vue</p>
+                        <p className={styles.toolName}>Node.js</p>
+                        <p className={styles.toolName}>SQL</p>
+                    </div>
+                </div>
                 <div className={styles.projectContainer} data-aos='zoom-in'>
                     <img src="/assets/stack.svg" className={styles.stackIcon} />
-                    <a href="https://countrydet.netlify.app/" target="_blank" rel="noopener noreferrer"><FiExternalLink className={styles.linkIcon} /></a>
-                    {/* <a href="https://allcountriesdetails.netlify.app/" target="_blank" rel="noopener noreferrer"><FiExternalLink className={styles.linkIcon} /></a> */}
-                    <p className={styles.projectName}>Go Country</p>
+                    <a href="https://core-ibanking.netlify.app/ssb" target="_blank" rel="noopener noreferrer"><FiExternalLink className={styles.linkIcon} /></a>
+                    <p className={styles.projectName}>Internet Banking</p>
                     <p className={styles.aboutProject}>
-                        A web application that provides users with countries details and their neighbouring country. search can be done by country search or by continents
+                        A web application with three designs options used by 300+ micro-finance banks' customers to perform financial transactions.
                     </p>
                     <div className={styles.projectToolsWrapper}>
                         <p className={styles.toolName}>React</p>
+                        <p className={styles.toolName}>Typescript</p>
+                        <p className={styles.toolName}>Asp.Net</p>
                     </div>
                 </div>
                 <div className={styles.projectContainer} data-aos='zoom-in'>
@@ -71,15 +83,15 @@ const OtherWorks = () => {
                 </div>
                 <div className={styles.projectContainer} data-aos='zoom-in'>
                     <img src="/assets/stack.svg" className={styles.stackIcon} />
-                    <a href="https://gtdashboard.herokuapp.com" target="_blank" rel="noopener noreferrer"><FiExternalLink className={styles.linkIcon} /></a>
-                    <p className={styles.projectName}>GT Server Monitor</p>
+                    <a href="https://crendly-admin.netlify.app" target="_blank" rel="noopener noreferrer"><FiExternalLink className={styles.linkIcon} /></a>
+                    <p className={styles.projectName}>Crendly Admin Panel</p>
                     <p className={styles.aboutProject}>
-                        This is an internal web app for monitoring servers with auto-notification and server uptime and downtime analysis.
+                        This is an internal web platform for the Crendly app which handles customer support, fraud monitoring, risk underwriting, compliance, audit and control etc.
                     </p>
                     <div className={styles.projectToolsWrapper}>
-                        <p className={styles.toolName}>React.js</p>
-                        <p className={styles.toolName}>Node.js</p>
-                        <p className={styles.toolName}>MongoDb</p>
+                        <p className={styles.toolName}>React</p>
+                        <p className={styles.toolName}>Typescript</p>
+                        <p className={styles.toolName}>Asp.Net</p>
                     </div>
                 </div>
                 {/* <div className={styles.projectContainer} data-aos='zoom-in'>
@@ -94,7 +106,7 @@ const OtherWorks = () => {
                         <p className={styles.toolName}>React-Native</p>
                     </div>
                 </div> */}
-                <div className={styles.projectContainer} data-aos='zoom-in'>
+                {/* <div className={styles.projectContainer} data-aos='zoom-in'>
                     <img src="/assets/stack.svg" className={styles.stackIcon} />
                     <a href="https://gtautoresponse.herokuapp.com" target="_blank" rel="noopener noreferrer"><FiExternalLink className={styles.linkIcon} /></a>
                     <p className={styles.projectName}>Auto Email Response</p>
@@ -106,6 +118,18 @@ const OtherWorks = () => {
                         <p className={styles.toolName}>Scss</p>
                         <p className={styles.toolName}>Node.js</p>
                         <p className={styles.toolName}>MongoDb</p>
+                    </div>
+                </div> */}
+                <div className={styles.projectContainer} data-aos='zoom-in'>
+                    <img src="/assets/stack.svg" className={styles.stackIcon} />
+                    <a href="https://countrydet.netlify.app/" target="_blank" rel="noopener noreferrer"><FiExternalLink className={styles.linkIcon} /></a>
+                    {/* <a href="https://allcountriesdetails.netlify.app/" target="_blank" rel="noopener noreferrer"><FiExternalLink className={styles.linkIcon} /></a> */}
+                    <p className={styles.projectName}>Go Country</p>
+                    <p className={styles.aboutProject}>
+                        A web application that provides users with countries details and their neighbouring country. search can be done by country search or by continents
+                    </p>
+                    <div className={styles.projectToolsWrapper}>
+                        <p className={styles.toolName}>React</p>
                     </div>
                 </div>
                 <div className={styles.projectContainer} data-aos='zoom-in'>
@@ -133,7 +157,7 @@ const OtherWorks = () => {
                         <p className={styles.toolName}>Travis CI</p>
                     </div>
                 </div> */}
-                <div className={styles.projectContainer} data-aos='zoom-in'>
+                {/* <div className={styles.projectContainer} data-aos='zoom-in'>
                     <img src="/assets/stack.svg" className={styles.stackIcon} />
                     <a href="https://swedbank-personal-loan.netlify.app" target="_blank" rel="noopener noreferrer"><FiExternalLink className={styles.linkIcon} /></a>
                     <p className={styles.projectName}>Personal Loan</p>
@@ -144,7 +168,7 @@ const OtherWorks = () => {
                         <p className={styles.toolName}>React.js</p>
                         <p className={styles.toolName}>AOS</p>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     )
