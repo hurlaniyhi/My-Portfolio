@@ -68,7 +68,13 @@ export default function Home() {
             <a href="#experience" className={styles.nav_item} name="projects"><span className={styles.numbers}>02.</span>Experience</a>
             <a href="#projects" className={styles.nav_item} name="FAQ"><span className={styles.numbers}>03.</span>Projects</a>
             <a href="#contacts" className={styles.nav_item} name="contacts"><span className={styles.numbers}>04.</span>Contact</a>
-            <a href="https://drive.google.com/file/d/1hkUdpv8Id98YtBDurD2ISprdn57xPjiZ/view?usp=sharing" target="_blank" rel="noopener noreferrer" className={styles.resumeBtn}>Resume</a>
+            <a 
+              href="https://drive.google.com/file/d/1xJl8sr8T2wnMdzCY7CXWK4RuEysbsHir/view?usp=sharing" 
+              target="_blank" rel="noopener noreferrer" 
+              className={styles.resumeBtn}
+            >
+                Resume
+              </a>
         </div>
       </div>
 
@@ -83,7 +89,7 @@ export default function Home() {
           <a href="#experience" className={styles["side-bar-items"]} onClick={()=>handleNavigation()} name="experience"><span className={styles.sideNumbers}>02.</span>Experience</a>
           <a href="#projects" className={styles["side-bar-items"]} onClick={()=>handleNavigation()} name="projects"><span className={styles.sideNumbers}>03.</span>Projects</a>
           <a href="#contacts" className={styles["side-bar-items"]} onClick={()=>handleNavigation()} name="contacts"><span className={styles.sideNumbers}>04.</span>Contact</a>
-          <a href="https://drive.google.com/file/d/1hkUdpv8Id98YtBDurD2ISprdn57xPjiZ/view?usp=sharing" target="_blank" rel="noopener noreferrer" className={styles.resumeBtn2}>Resume</a>
+          <a href="https://drive.google.com/file/d/1xJl8sr8T2wnMdzCY7CXWK4RuEysbsHir/view?usp=sharing" target="_blank" rel="noopener noreferrer" className={styles.resumeBtn2}>Resume</a>
         </div>
 
 
@@ -94,7 +100,7 @@ export default function Home() {
           <p className={styles.myName} data-aos='fade-right' data-aos-delay='3000' data-aos-once={true} data-aos-duration="1300">Ridwan Kolawole.</p>
           <p className={`${styles.slogan} ${styles.resetPadding}`}>I use technology to build for humans.</p>
           <p className={styles.greeting}>
-            I'm a Fullstack Software Engineer with over 4 years of experience using different tools to build software platforms and applications providing solutions to 
+            I'm a Fullstack Software Engineer (specializes more on frontend) with over 4 years of experience using different tools to build software platforms and applications providing solutions to 
             client's problems digitally.
           </p>
           <p className={styles.greeting}>

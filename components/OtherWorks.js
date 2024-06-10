@@ -9,35 +9,11 @@ const OtherWorks = () => {
             <div className={styles. projectsWrapper}>
                 <div className={styles.projectContainer} data-aos='zoom-in'>
                     <img src="/assets/stack.svg" className={styles.stackIcon} />
-                    <a href="https://virtuoussprouts.org" target="_blank" rel="noopener noreferrer"><FiExternalLink className={styles.linkIcon} /></a>
-                    <p className={styles.projectName}>Virtuous Sprouts</p>
-                    <p className={styles.aboutProject}>
-                        This is a web application used by Virtuous Sprouts for student registration and result portal
-                    </p>
-                    <div className={styles.projectToolsWrapper}>
-                        <p className={styles.toolName}>React</p>
-                        <p className={styles.toolName}>Scss</p>
-                        <p className={styles.toolName}>Node.Js</p>
-                        <p className={styles.toolName}>MongoDb</p>
-                    </div>
-                    {/* https://check-d-deck.herokuapp.com */}
-                </div>
-                <div className={styles.projectContainer} data-aos='zoom-in'>
-                    <img src="/assets/stack.svg" className={styles.stackIcon} />
-                    <a href="https://play.google.com/store/apps/details?id=com.gtbank.appdev.orangetoolboxv1" target="_blank" rel="noopener noreferrer"><FiExternalLink className={styles.linkIcon} /></a>
-                    <p className={styles.projectName}>Orange Tool Box</p>
-                    <p className={styles.aboutProject}>This is a mobile app used by the GTBank's staff majorly marketers to ease banking and solving customers' issues outside the bank</p>
-                    <div className={styles.projectToolsWrapper}>
-                        <p className={styles.toolName}>Ionic Angular</p>
-                        <p className={styles.toolName}>Asp.Net</p>
-                        <p className={styles.toolName}>SQL</p>
-                    </div>
-                </div>
-                 <div className={styles.projectContainer} data-aos='zoom-in'>
-                    <img src="/assets/stack.svg" className={styles.stackIcon} />
                     <a href="https://app.flutterwave.com/register" target="_blank" rel="noopener noreferrer"><FiExternalLink className={styles.linkIcon} /></a>
                     <p className={styles.projectName}>Flutterwave For Business</p>
-                    <p className={styles.aboutProject}>This is an application which helps merchants sell online, process payment and grow their business.</p>
+                    <p className={styles.aboutProject}>
+                        This is an application which helps merchants sell online, process payment and grow their business.
+                    </p>
                     <div className={styles.projectToolsWrapper}>
                         <p className={styles.toolName}>Vue</p>
                         <p className={styles.toolName}>Node.js</p>
@@ -46,20 +22,86 @@ const OtherWorks = () => {
                 </div>
                 <div className={styles.projectContainer} data-aos='zoom-in'>
                     <img src="/assets/stack.svg" className={styles.stackIcon} />
-                    <a href="https://core-ibanking.netlify.app/ssb" target="_blank" rel="noopener noreferrer"><FiExternalLink className={styles.linkIcon} /></a>
-                    <p className={styles.projectName}>Internet Banking</p>
+                    <a href="https://www.accessbankplc.com/primus/index.html" target="_blank" rel="noopener noreferrer">
+                        <FiExternalLink className={styles.linkIcon} />
+                    </a>
+                    <p className={styles.projectName}>Primus Plus</p>
                     <p className={styles.aboutProject}>
-                        A web application with three designs options used by 300+ micro-finance banks' customers to perform financial transactions.
+                        A fully integrated, secure web-based platform designed to provide Access bank 
+                        corporate clients with a one-point access to banking solutions via an intuitive user interface.
+                    </p>
+                    <div className={styles.projectToolsWrapper}>
+                        <p className={styles.toolName}>Asp.Net (MVC)</p>
+                        <p className={styles.toolName}>CSS</p>
+                        <p className={styles.toolName}>SQL</p>
+                    </div>
+                </div>
+                <div className={styles.projectContainer} data-aos='zoom-in'>
+                    <img src="/assets/stack.svg" className={styles.stackIcon} />
+                    <a href="https://www.npmjs.com/package/react-pop-notifier" target="_blank" rel="noopener noreferrer">
+                        <FiExternalLink className={styles.linkIcon} />
+                    </a>
+                    <p className={styles.projectName}>React-Pop-Notifier</p>
+                    <p className={styles.aboutProject}>
+                        This is an open source customizable react toaster library used for displaying success and error messages in a React application.
                     </p>
                     <div className={styles.projectToolsWrapper}>
                         <p className={styles.toolName}>React</p>
                         <p className={styles.toolName}>Typescript</p>
+                        <p className={styles.toolName}>Styled-Component</p>
+                    </div>
+                </div>
+                <div className={styles.projectContainer} data-aos='zoom-in'>
+                    <img src="/assets/stack.svg" className={styles.stackIcon} />
+                    <a href="https://virtuoussprouts-new.netlify.app" target="_blank" rel="noopener noreferrer">
+                        <FiExternalLink className={styles.linkIcon} />
+                    </a>
+                    <p className={styles.projectName}>Virtuous Sprouts</p>
+                    <p className={styles.aboutProject}>
+                        This is a web application used by Virtuous Sprouts for student registration and result portal
+                    </p>
+                    <div className={styles.projectToolsWrapper}>
+                        <p className={styles.toolName}>React</p>
+                        <p className={styles.toolName}>Typescript</p>
+                        <p className={styles.toolName}>SCSS</p>
+                        <p className={styles.toolName}>Node.Js</p>
+                    </div>
+                    {/* https://check-d-deck.herokuapp.com */}
+                </div>
+                <div className={styles.projectContainer} data-aos='zoom-in'>
+                    <img src="/assets/stack.svg" className={styles.stackIcon} />
+                    <a href="https://crendly-admin-prod.netlify.app" target="_blank" rel="noopener noreferrer">
+                        <FiExternalLink className={styles.linkIcon} />
+                    </a>
+                    <p className={styles.projectName}>Crendly Admin Panel</p>
+                    <p className={styles.aboutProject}>
+                        This is an internal web platform for the Crendly app which handles customer support, fraud monitoring, risk underwriting, compliance, audit and control etc.
+                    </p>
+                    <div className={styles.projectToolsWrapper}>
+                        <p className={styles.toolName}>React</p>
+                        <p className={styles.toolName}>Typescript</p>
+                        <p className={styles.toolName}>SCSS</p>
                         <p className={styles.toolName}>Asp.Net</p>
                     </div>
                 </div>
                 <div className={styles.projectContainer} data-aos='zoom-in'>
                     <img src="/assets/stack.svg" className={styles.stackIcon} />
-                    <a href="https://drive.google.com/file/d/1pRg9vZrelncG5n_0UzjVESI2TWzllaeH/view?usp=sharing" target="_blank" rel="noopener noreferrer"><FiExternalLink className={styles.linkIcon} /></a>
+                    <a href="https://play.google.com/store/apps/details?id=com.gtbank.appdev.orangetoolboxv1" target="_blank" rel="noopener noreferrer">
+                        <FiExternalLink className={styles.linkIcon} />
+                    </a>
+                    <p className={styles.projectName}>Orange Tool Box</p>
+                    <p className={styles.aboutProject}>This is a mobile app used by the GTBank's staff majorly marketers to ease banking and solving customers' issues outside the bank</p>
+                    <div className={styles.projectToolsWrapper}>
+                        <p className={styles.toolName}>Ionic Angular</p>
+                        <p className={styles.toolName}>Asp.Net</p>
+                        <p className={styles.toolName}>SQL</p>
+                    </div>
+                </div>
+                <div className={styles.projectContainer} data-aos='zoom-in'>
+                    <img src="/assets/stack.svg" className={styles.stackIcon} />
+                    <a href="https://drive.google.com/file/d/1pRg9vZrelncG5n_0UzjVESI2TWzllaeH/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                        <FiExternalLink className={styles.linkIcon} />
+                    </a>
                     <p className={styles.projectName}>Rymz</p>
                     <p className={styles.aboutProject}>
                         This is a rhyme mobile app built for children for learning the English letters
@@ -69,9 +111,9 @@ const OtherWorks = () => {
                         <p className={styles.toolName}>Node.js</p>
                     </div>
                 </div>
-                <div className={styles.projectContainer} data-aos='zoom-in'>
+                {/* <div className={styles.projectContainer} data-aos='zoom-in'>
                     <img src="/assets/stack.svg" className={styles.stackIcon} />
-                    <a href="https://newcoretechnologies.com" target="_blank" rel="noopener noreferrer"><FiExternalLink className={styles.linkIcon} /></a>
+                    <a href="https://newcoretechnologies.netlify.app" target="_blank" rel="noopener noreferrer"><FiExternalLink className={styles.linkIcon} /></a>
                     <p className={styles.projectName}>Newcore Technologies Site</p>
                     <p className={styles.aboutProject}>
                         This is an online website for Newcore Technologies Ltd.
@@ -80,20 +122,7 @@ const OtherWorks = () => {
                         <p className={styles.toolName}>React</p>
                         <p className={styles.toolName}>AOS</p>
                     </div>
-                </div>
-                <div className={styles.projectContainer} data-aos='zoom-in'>
-                    <img src="/assets/stack.svg" className={styles.stackIcon} />
-                    <a href="https://crendly-admin.netlify.app" target="_blank" rel="noopener noreferrer"><FiExternalLink className={styles.linkIcon} /></a>
-                    <p className={styles.projectName}>Crendly Admin Panel</p>
-                    <p className={styles.aboutProject}>
-                        This is an internal web platform for the Crendly app which handles customer support, fraud monitoring, risk underwriting, compliance, audit and control etc.
-                    </p>
-                    <div className={styles.projectToolsWrapper}>
-                        <p className={styles.toolName}>React</p>
-                        <p className={styles.toolName}>Typescript</p>
-                        <p className={styles.toolName}>Asp.Net</p>
-                    </div>
-                </div>
+                </div> */}
                 {/* <div className={styles.projectContainer} data-aos='zoom-in'>
                     <img src="/assets/stack.svg" className={styles.stackIcon} />
                     <a href="https://drive.google.com/file/d/1KRUZLoBuwCXuVtVi5oxua56ho2KLxck0/view?usp=sharing" target="_blank" rel="noopener noreferrer"><FiExternalLink className={styles.linkIcon} /></a>
@@ -120,10 +149,9 @@ const OtherWorks = () => {
                         <p className={styles.toolName}>MongoDb</p>
                     </div>
                 </div> */}
-                <div className={styles.projectContainer} data-aos='zoom-in'>
+                {/* <div className={styles.projectContainer} data-aos='zoom-in'>
                     <img src="/assets/stack.svg" className={styles.stackIcon} />
                     <a href="https://countrydet.netlify.app/" target="_blank" rel="noopener noreferrer"><FiExternalLink className={styles.linkIcon} /></a>
-                    {/* <a href="https://allcountriesdetails.netlify.app/" target="_blank" rel="noopener noreferrer"><FiExternalLink className={styles.linkIcon} /></a> */}
                     <p className={styles.projectName}>Go Country</p>
                     <p className={styles.aboutProject}>
                         A web application that provides users with countries details and their neighbouring country. search can be done by country search or by continents
@@ -131,11 +159,28 @@ const OtherWorks = () => {
                     <div className={styles.projectToolsWrapper}>
                         <p className={styles.toolName}>React</p>
                     </div>
+                </div> */}
+                <div className={styles.projectContainer} data-aos='zoom-in'>
+                    <img src="/assets/stack.svg" className={styles.stackIcon} />
+                    <a href="https://address-verification.netlify.app/" target="_blank" rel="noopener noreferrer">
+                        <FiExternalLink className={styles.linkIcon} />
+                    </a>
+                    <p className={styles.projectName}>Adress Verification System</p>
+                    <p className={styles.aboutProject}>
+                        A web application used by integrated companies for verifying and managing the address of their customers and location history
+                    </p>
+                    <div className={styles.projectToolsWrapper}>
+                        <p className={styles.toolName}>React</p>
+                        <p className={styles.toolName}>Typescript</p>
+                        <p className={styles.toolName}>SCSS</p>
+                    </div>
                 </div>
                 <div className={styles.projectContainer} data-aos='zoom-in'>
                     <img src="/assets/stack.svg" className={styles.stackIcon} />
                     
-                    <a href="https://drive.google.com/file/d/1Ou9A_r8pxNXpPI2CGzbuGQ1auWXqdaqv/view?usp=sharing" target="_blank" rel="noopener noreferrer"><FiExternalLink className={styles.linkIcon} /></a>
+                    <a href="https://drive.google.com/file/d/1Ou9A_r8pxNXpPI2CGzbuGQ1auWXqdaqv/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                        <FiExternalLink className={styles.linkIcon} />
+                    </a>
                     <p className={styles.projectName}>Robotics in Banking</p>
                     <p className={styles.aboutProject}>
                         An extensive article on how Robots begin to invade banking industry and how promising the future of Robotic technology is in banking.

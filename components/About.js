@@ -13,7 +13,7 @@ const About = () => {
                     </p>
                     <p className={styles.aboutText}>
                         An algorithm lover with problem-solving skills and proven experience in creating and designing
-                        softwares(web and Mobile) in a test driven environment. I have a bachelor's degree
+                        softwares in a test driven environment. I have a bachelor's degree
                         in Electrical Engineering (First-class graduate). 
                     </p>
                     <p className={styles.aboutText}>

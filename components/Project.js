@@ -9,34 +9,85 @@ const Projects = () => {
 
             <div className={styles.projectWrapper} data-aos='fade-down-right' data-aos-once={true}>
                 <div className={styles.projectInfoLeft}>
-                    {/* <p className={`${styles.projectText} ${styles.textLeft}`}>Featured Project</p> */}
                     <p className={`${styles.projectName} ${styles.textLeft}`}>Crendly</p>
                     <div className={styles.aboutProjectWrapper}>
                         <div className={styles.aboutProjectLeft}>
-                            <p className={styles.aboutProjectTextLeft}>A platform for social lending. it brings lenders and borrowers together to make lending easier while also handling the processing, payment and disbursement</p>
+                            <p className={styles.aboutProjectTextLeft}>
+                                A platform for social lending. it brings lenders and borrowers together to make 
+                                lending easier while also handling the processing, payment and disbursement
+                            </p>
                         </div>
                     </div>
                     <div className={styles.projectToolsWrapper}>
-                        <p className={styles.toolText}>React.js</p>
+                        <p className={styles.toolText}>React</p>
                         <p className={styles.toolText}>Typescript</p>
                         <p className={styles.toolText}>Styled-Component</p>
                         <p className={styles.toolText}>SCSS</p>
                         <p className={styles.toolText}>Asp.net</p>
                     </div>
-                    <a href="https://crendly.com" target="_blank" rel="noopener noreferrer"><FiExternalLink className={styles.linkIconLeft} /></a>
+                    <a href="https://crendly.com" target="_blank" rel="noopener noreferrer">
+                        <FiExternalLink className={styles.linkIconLeft} />
+                    </a>
                 </div>
                 <div className={styles.projectImageRight}>
-                    {/* <img src="/assets/vsprout3.png" className={styles.projectImage} /> */}
-                    {/* <div className={styles.overlay}></div> */}
-                    {/* https://virtuous-sprout.herokuapp.com */}
+                   <img src="/assets/crendly.png" className={styles.projectImgPlus} />
                 </div>
             </div>
 
             <div className={`${styles.projectWrapper} ${styles.projectWrapperReverse}`} data-aos='fade-down-left' data-aos-once={true}>
                 <div className={styles.projectImageLeft}>
-                    {/* <img src="/assets/email-platform2.png" className={styles.projectImage} /> */}
-                    {/* <div className={styles.overlay}></div> */}
+                    <img src="/assets/ibanking.svg" className={styles.projectImgPlus} />
                 </div>
+                <div className={styles.projectInfoRight}>
+                    <p className={`${styles.projectName} ${styles.textRight}`}>Qore Internet Banking</p>
+                    <div className={styles.aboutProjectWrapper}>
+                        <div className={styles.aboutProjectRight}>
+                            <p className={styles.aboutProjectTextRight}>
+                                A web application with three designs options and customizable themes used by 300+ micro-finance banks' c
+                                ustomers to perform financial transactions.
+                            </p>
+                        </div>
+                    </div>
+                    <div className={styles.projectToolsWrapper}>
+                        <p className={styles.toolText}>React</p>
+                        <p className={styles.toolText}>Typescript</p>
+                        <p className={styles.toolText}>SCSS</p>
+                        <p className={styles.toolText}>Asp.Net</p>
+                        <p className={styles.toolText}>Styled-Component</p>
+                    </div>
+                    <a href="https://staging.qore.build/fs" target="_blank" rel="noopener noreferrer"><FiExternalLink className={styles.linkIconRight} /></a>
+                </div>
+            </div>
+
+            <div className={styles.projectWrapper} data-aos='fade-down-right' data-aos-once={true}>
+                <div className={styles.projectInfoLeft}>
+                    <p className={`${styles.projectName} ${styles.textLeft}`}>Qore Ibanking Admin Portal</p>
+                    <div className={styles.aboutProjectWrapper}>
+                        <div className={styles.aboutProjectLeft}>
+                            <p className={styles.aboutProjectTextLeft}>
+                                A platform used by 300+ mico-finance banks to configure the look and feel, 
+                                and manage usage reports of their customized internet banking application
+                            </p>
+                        </div>
+                    </div>
+                    <div className={styles.projectToolsWrapper}>
+                        <p className={styles.toolText}>React</p>
+                        <p className={styles.toolText}>Typescript</p>
+                        <p className={styles.toolText}>Styled-Component</p>
+                        <p className={styles.toolText}>SCSS</p>
+                        <p className={styles.toolText}>Asp.Net</p>
+                    </div>
+                    <a href="https://adminportal.qore.build" target="_blank" rel="noopener noreferrer">
+                        <FiExternalLink className={styles.linkIconLeft} />
+                    </a>
+                </div>
+                <div className={styles.projectImageRight}>
+                   <img src="/assets/ibanking-portal.svg" className={styles.projectImgPlus} />
+                </div>
+            </div>
+
+            {/* <div className={`${styles.projectWrapper} ${styles.projectWrapperReverse}`} data-aos='fade-down-left' data-aos-once={true}>
+                <div className={styles.projectImageLeft}></div>
                 <div className={styles.projectInfoRight}>
                     <p className={`${styles.projectText} ${styles.textRight}`}>Featured Project</p>
                     <p className={`${styles.projectName} ${styles.textRight}`}>Primus Plus</p>
@@ -53,7 +104,7 @@ const Projects = () => {
                     </div>
                     <a href="https://www.accessbankplc.com/primus/index.html" target="_blank" rel="noopener noreferrer"><FiExternalLink className={styles.linkIconRight} /></a>
                 </div>
-            </div>
+            </div> */}
 
             <div className={styles.projectWrapper} data-aos='fade-up-right' data-aos-once={true}>
                 <div className={styles.projectInfoLeft}>
@@ -73,17 +124,14 @@ const Projects = () => {
                 </div>
                 <div className={styles.altprojectImageRight}>
                     <img src="/assets/canva2.png" className={styles.emulatorImageRight} />
-                    {/* <div className={styles.overlay}></div> */}
                 </div>
             </div>
 
-            <div className={`${styles.projectWrapper} ${styles.projectWrapperReverse}`} data-aos='fade-up-left' data-aos-once={true}>
+            {/* <div className={`${styles.projectWrapper} ${styles.projectWrapperReverse}`} data-aos='fade-up-left' data-aos-once={true}>
                 <div className={styles.altprojectImageLeft}>
                     <img src="/assets/canva1.png" className={styles.emulatorImageLeft} />
-                    {/* <div className={styles.overlay}></div> */}
                 </div>
                 <div className={styles.projectInfoRight}>
-                    {/* <p className={`${styles.projectText} ${styles.textRight}`}>Featured Project</p> */}
                     <p className={`${styles.projectName} ${styles.textRight}`}>Shopwyse</p>
                     <div className={styles.aboutProjectWrapper}>
                         <div className={styles.aboutProjectRight}>
@@ -98,8 +146,7 @@ const Projects = () => {
                     </div>
                     <a href="https://drive.google.com/file/d/1pPEbomgDKJRmQxgpCkrtM4sKOkzQtz4X/view?usp=sharing" target="_blank" rel="noopener noreferrer"><FiExternalLink className={styles.linkIconRight} /></a>
                 </div>
-            </div>
-
+            </div> */}
         </div>
     )
 }
