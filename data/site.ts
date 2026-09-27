@@ -6,5 +6,5 @@ export const siteConfig = {
   ownerName: 'Ridwan Kolawole',
   alias: 'Rhydhur',
   email: 'devrhydhur@gmail.com',
-  resumeUrl: 'https://drive.google.com/file/d/1xJl8sr8T2wnMdzCY7CXWK4RuEysbsHir/view?usp=sharing',
+  resumeUrl: 'https://drive.google.com/file/d/1Ag6bKXEJU34Bue5Is6PbZ2Ib8Kz6RQaS/view?usp=sharing',
 };

@@ -43,13 +43,6 @@ export const otherProjects: OtherProject[] = [
     url: 'https://virtuoussprouts-new.netlify.app',
   },
   {
-    name: 'Crendly Admin Panel',
-    description:
-      'This is an internal web platform for the Crendly app which handles customer support, fraud monitoring, risk underwriting, compliance, audit and control etc.',
-    tools: ['React', 'Typescript', 'SCSS', 'Asp.Net'],
-    url: 'https://crendly-admin-prod.netlify.app',
-  },
-  {
     name: 'Orange Tool Box',
     description:
       "This is a mobile app used by the GTBank's staff majorly marketers to ease banking and solving customers' issues outside the bank",
@@ -62,6 +55,13 @@ export const otherProjects: OtherProject[] = [
     tools: ['React-Native', 'Node.js'],
     url: 'https://drive.google.com/file/d/1pRg9vZrelncG5n_0UzjVESI2TWzllaeH/view?usp=sharing',
   },
+  {
+    name: 'Crendly Admin Panel',
+    description:
+      'This is an internal web platform for the Crendly app which handles customer support, fraud monitoring, risk underwriting, compliance, audit and control etc.',
+    tools: ['React', 'Typescript', 'SCSS', 'Asp.Net'],
+    url: 'https://crendly-admin.netlify.app/',
+  },
   // {
   //   name: 'Address Verification System',
   //   description:
@@ -69,11 +69,11 @@ export const otherProjects: OtherProject[] = [
   //   tools: ['React', 'Typescript', 'SCSS'],
   //   url: 'https://address-verification.netlify.app/',
   // },
-  {
-    name: 'Robotics in Banking',
-    description:
-      'An extensive article on how Robots begin to invade banking industry and how promising the future of Robotic technology is in banking.',
-    tools: ['Canva'],
-    url: 'https://drive.google.com/file/d/1Ou9A_r8pxNXpPI2CGzbuGQ1auWXqdaqv/view?usp=sharing',
-  },
+  // {
+  //   name: 'Robotics in Banking',
+  //   description:
+  //     'An extensive article on how Robots begin to invade banking industry and how promising the future of Robotic technology is in banking.',
+  //   tools: ['Canva'],
+  //   url: 'https://drive.google.com/file/d/1Ou9A_r8pxNXpPI2CGzbuGQ1auWXqdaqv/view?usp=sharing',
+  // },
 ];
