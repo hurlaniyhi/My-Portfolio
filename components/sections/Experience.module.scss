@@ -1,0 +1,154 @@
+@use '../../styles/variables' as *;
+
+$mobile-breakpoint: 750px;
+
+.container {
+  width: 85rem;
+  margin: 2rem auto 22rem auto;
+  overflow: hidden;
+
+  @media (max-width: $mobile-breakpoint) {
+    width: 85%;
+  }
+}
+
+// ---------- Desktop layout ----------
+
+.desktopLayout {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  position: relative;
+
+  @media (max-width: $mobile-breakpoint) {
+    display: none;
+  }
+}
+
+.companyList {
+  width: 13%;
+  margin-right: 5rem;
+  margin-left: 4rem;
+}
+
+.details {
+  width: 75%;
+}
+
+.verticalLine {
+  height: 30rem;
+  width: 0.05rem;
+  background-color: $color-theme-text-bold;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+// Moves up and down the line to point at the selected company (its `top` is set in Experience.tsx).
+.highlightBar {
+  display: block;
+  position: absolute;
+  background-color: $color-theme-text;
+  width: 0.5rem;
+  height: 3rem;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 20%;
+  transition: all 0.3s;
+}
+
+.company {
+  font-size: 1.4rem;
+  color: $color-theme-text-bold;
+  line-height: 2.1rem;
+  cursor: url('/assets/navigation16.png'), auto;
+
+  &:hover {
+    color: $color-theme-text;
+  }
+}
+
+.companyActive {
+  color: $color-theme-text;
+}
+
+// Makes the <button> look exactly like plain text inside the <p>.
+.companyButton {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: none;
+  background: none;
+  font: inherit;
+  color: inherit;
+  text-align: left;
+  cursor: inherit;
+}
+
+// ---------- Mobile layout ----------
+
+.mobileCard {
+  display: none;
+
+  @media (max-width: $mobile-breakpoint) {
+    display: block;
+    width: 100%;
+    background-color: $color-theme-background-light;
+    padding: 2rem 2rem 1rem 2rem;
+    border-radius: 0.5rem;
+    margin-bottom: 3.5rem;
+  }
+}
+
+// ---------- Job details (shared by desktop and mobile) ----------
+
+.role {
+  font-size: 2.4rem;
+  color: $color-theme-text;
+  line-height: 3.6rem;
+  margin: 0;
+  padding: 0;
+}
+
+.companyName {
+  color: $color-theme-text-bold;
+  text-decoration: none;
+  outline: none;
+}
+
+a.companyName {
+  cursor: url('/assets/navigation24.png'), auto;
+
+  &:hover {
+    border-bottom: 1px solid $color-theme-text-bold;
+  }
+}
+
+.period {
+  font-size: 1.6rem;
+  color: $color-theme-text;
+  line-height: 2.4rem;
+  margin: 0.5rem 0 2.5rem 0;
+  padding: 0;
+}
+
+.highlight {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0 0 1.5rem 0;
+}
+
+.bulletIcon {
+  font-size: 2rem;
+  color: $color-theme-text-bold;
+}
+
+.highlightText {
+  font-size: 1.5rem;
+  color: $color-theme-text;
+  padding-left: 1rem;
+  line-height: 2.4rem;
+  margin: 0;
+}

@@ -1,0 +1,128 @@
+@use '../../styles/variables' as *;
+
+.container {
+  width: 100%;
+  margin: 2rem 0 22rem 0;
+  padding: 0 2%;
+}
+
+.title {
+  font-size: 3.6rem;
+  color: $color-theme-text;
+  text-align: center;
+  font-weight: 600;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 1.6rem;
+  font-family: $font-cursive;
+  color: $color-theme-text-bold;
+  text-align: center;
+  line-height: 2.4rem;
+}
+
+.grid {
+  display: flex;
+  width: 118rem;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 4rem auto 1rem auto;
+
+  @media (max-width: 1300px) {
+    width: 80%;
+    justify-content: center;
+  }
+  @media (max-width: 850px) {
+    width: 90%;
+  }
+  @media (max-width: 600px) {
+    width: 100%;
+  }
+}
+
+.card {
+  width: 37rem;
+  margin: 1rem;
+  height: 34rem;
+  background-color: $color-theme-background-light;
+  border-radius: 0.6rem;
+  padding: 2rem 1.8rem;
+  position: relative;
+  transition: all 0.3s;
+
+  &:hover {
+    margin-top: -0.5rem;
+  }
+
+  @media (max-width: 1300px) {
+    width: 30.5%;
+  }
+  @media (max-width: 1230px) {
+    width: 40%;
+  }
+  @media (max-width: 1000px) {
+    width: 43%;
+  }
+  @media (max-width: 900px) {
+    width: 47%;
+  }
+  @media (max-width: 840px) {
+    width: 70%;
+  }
+  @media (max-width: 600px) {
+    width: 95%;
+    height: 28rem;
+  }
+}
+
+.stackIcon {
+  width: 4rem;
+  height: 4.5rem;
+  position: absolute;
+  top: 2rem;
+  left: 1.8rem;
+}
+
+.linkIcon {
+  position: absolute;
+  top: 1.7rem;
+  right: 2rem;
+  color: $color-theme-text;
+  font-size: 3rem;
+  transition: all 0.2s;
+
+  &:hover {
+    color: $color-theme-text-bold;
+  }
+}
+
+.name {
+  font-size: 2.4rem;
+  color: $color-theme-text;
+  line-height: 3.6rem;
+  text-align: left;
+  margin-top: 6rem;
+  margin-bottom: 0;
+}
+
+.description {
+  font-size: 1.6rem;
+  color: $color-theme-text-bold;
+  line-height: 2.4rem;
+}
+
+.tools {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.tool {
+  font-size: 1.6rem;
+  color: $color-theme-text;
+  padding-right: 2rem;
+}

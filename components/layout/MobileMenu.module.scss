@@ -1,0 +1,199 @@
+@use '../../styles/variables' as *;
+
+@keyframes slide-in-from-right {
+  0% {
+    opacity: 0;
+    right: -30rem;
+  }
+  100% {
+    opacity: 1;
+    right: 0;
+  }
+}
+
+// ---------- Toggle (hidden checkbox + hamburger label) ----------
+
+.checkbox {
+  display: none;
+}
+
+.menuButton {
+  display: none;
+  height: 5rem;
+  width: 5rem;
+  position: fixed;
+  top: 0.25rem;
+  right: 2rem;
+  z-index: 8;
+  text-align: center;
+  cursor: url('/assets/navigation16.png'), auto;
+
+  @media (max-width: 760px) {
+    display: block;
+  }
+  @media (max-width: 350px) {
+    right: 1.3rem;
+  }
+  @media (max-width: 300px) {
+    right: 1rem;
+  }
+}
+
+// Three-line hamburger icon: the span is the middle line, ::before/::after are the top and bottom lines.
+.menuIcon {
+  position: relative;
+  margin-top: 3.4rem;
+
+  &,
+  &::before,
+  &::after {
+    width: 4rem;
+    height: 2px;
+    background-color: $color-theme-text-bold;
+    display: inline-block;
+  }
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    transition: all 0.2s;
+  }
+
+  &::before {
+    top: -1rem;
+  }
+
+  &::after {
+    top: 1rem;
+  }
+}
+
+// ---------- Open state ----------
+
+.checkbox:checked ~ .backdrop {
+  display: block;
+}
+
+.checkbox:checked ~ .sidebar {
+  display: flex;
+  animation-name: slide-in-from-right;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+}
+
+.checkbox:checked ~ .menuButton {
+  z-index: 8;
+  right: 1rem;
+
+  .menuIcon {
+    &,
+    &::before,
+    &::after {
+      background-color: $color-theme-text-bold;
+      width: 3.5rem;
+    }
+  }
+}
+
+// Turn the hamburger into an "X"
+.checkbox:checked + .menuButton .menuIcon {
+  background-color: transparent;
+}
+
+.checkbox:checked + .menuButton .menuIcon::before {
+  top: 0;
+  transform: rotate(135deg);
+}
+
+.checkbox:checked + .menuButton .menuIcon::after {
+  top: 0;
+  transform: rotate(-135deg);
+}
+
+// ---------- Side menu ----------
+
+.backdrop {
+  display: none;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 6;
+  pointer-events: none;
+}
+
+.sidebar {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  padding: 32% 2rem 5rem 2rem;
+  width: 35rem;
+  height: 100vh;
+  position: fixed;
+  top: 50%;
+  right: 0;
+  background-color: $color-theme-background-light;
+  transform: translateY(-50%);
+  transition: all 2s ease-in-out;
+  box-sizing: border-box;
+  z-index: 7;
+  box-shadow: 0 0 2.4rem 0 rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+
+  @media (max-width: 470px) {
+    width: 30rem;
+    padding-top: 40%;
+  }
+}
+
+.sidebarLink {
+  text-decoration: none;
+  font-size: 2.2rem;
+  color: $color-theme-text;
+  cursor: url('/assets/cursorhead.png'), auto;
+  outline: none;
+  padding: 1rem 1rem;
+  width: 100%;
+  margin: 1rem 2.5rem 0 2.5rem;
+  text-align: center;
+  transition: all 0.3s;
+
+  &:visited {
+    color: $color-theme-text;
+  }
+  &:hover {
+    background-color: $color-theme-background;
+    border: 1px solid $color-theme-text-bold;
+    border-radius: 0.6rem;
+  }
+}
+
+.sidebarNumber {
+  color: $color-theme-text-bold;
+  font-size: 2rem;
+  padding-right: 1.5rem;
+  font-family: $font-cursive;
+}
+
+.resumeButton {
+  width: 18rem;
+  text-align: center;
+  padding: 1.7rem 1rem;
+  text-decoration: none;
+  outline: none;
+  background-color: $color-theme-background;
+  border-radius: 0.8rem;
+  margin-top: 7rem;
+  color: $color-theme-text;
+  font-size: 1.8rem;
+  border: 1px solid $color-theme-text-bold;
+
+  &:hover {
+    color: $color-white;
+    background-color: $color-hover-background;
+  }
+}

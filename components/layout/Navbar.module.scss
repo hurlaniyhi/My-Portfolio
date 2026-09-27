@@ -1,0 +1,144 @@
+@use '../../styles/variables' as *;
+
+@keyframes logo-first-part {
+  0% {
+    color: #ff69b4;
+  }
+  100% {
+    color: #64ffda;
+  }
+}
+
+@keyframes logo-second-part {
+  0% {
+    color: #64ffda;
+  }
+  100% {
+    color: #ff69b4;
+  }
+}
+
+@keyframes animated-logo {
+  0% {
+    background-color: #ff69b4;
+  }
+  100% {
+    background-color: #64ffda;
+  }
+}
+
+.navbar {
+  width: 100%;
+  height: 7.2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 7;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  transition: all 0.15s;
+  background-color: $color-theme-background;
+  border-bottom: 1px solid rgba(#fff, 0.03);
+}
+
+.navItems {
+  width: 45rem;
+  height: 6rem;
+  margin-right: 15rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+  @media (max-width: 1638px) {
+    margin-right: 23rem;
+  }
+  @media (max-width: 1280px) {
+    margin-right: 15rem;
+  }
+  @media (max-width: 1070px) {
+    margin-right: 10rem;
+  }
+  @media (max-width: 760px) {
+    margin-right: 5rem;
+    display: none; // the mobile menu takes over
+  }
+}
+
+.navItem {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: $color-theme-text;
+  cursor: url('/assets/cursorhead.png'), auto;
+  outline: none;
+  transition: all 0.3s;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-family: 'Hind Siliguri', 'Source Sans Pro', -apple-system, system-ui, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif;
+
+  &:hover {
+    color: $color-white;
+    background-color: $color-hover-background;
+  }
+}
+
+.number {
+  font-family: $font-cursive;
+  padding-right: 0.5rem;
+  font-size: 1.4rem;
+}
+
+// Colour-changing logo shape (masked by Rhydur.svg)
+.animatedLogo {
+  width: 15rem;
+  height: 15rem;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  top: 50%;
+  left: -2rem;
+  transform: translateY(-50%);
+  animation: animated-logo 1s ease-in-out infinite alternate-reverse both;
+  -webkit-mask: url('/assets/Rhydur.svg') no-repeat center;
+  mask: url('/assets/Rhydur.svg') no-repeat center;
+}
+
+// "Rhydhur" text logo
+.logo {
+  font-family: proxima-nova, helvetica, arial, sans-serif;
+  text-transform: capitalize;
+  font-size: 3rem;
+  font-weight: bold;
+  position: fixed;
+  top: 2rem;
+  left: 8rem;
+  padding: 0;
+  margin: 0;
+  color: $color-theme-text;
+  z-index: 30;
+}
+
+.logoFirstPart {
+  animation: logo-first-part 1s ease-in-out infinite alternate-reverse both;
+}
+
+.logoSecondPart {
+  animation: logo-second-part 1s ease-in-out infinite alternate-reverse both;
+}
+
+.resumeButton {
+  padding: 0.8rem 1rem;
+  color: $color-theme-text;
+  font-size: 1.6rem;
+  border: 1px solid $color-theme-text-bold;
+  border-radius: 0.6rem;
+  margin-left: 2rem;
+  cursor: url('/assets/cursorhead.png'), auto;
+
+  &:hover {
+    color: $color-white;
+    background-color: $color-hover-background;
+  }
+}

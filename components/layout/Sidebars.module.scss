@@ -1,0 +1,66 @@
+@use '../../styles/variables' as *;
+
+// Shared by SocialSidebar (left) and EmailSidebar (right).
+
+.verticalLine {
+  height: 10rem;
+  width: 0.05rem;
+  background-color: $color-theme-text;
+}
+
+// ---------- Left: social icons ----------
+
+.socialSidebar {
+  position: fixed;
+  bottom: 0;
+  left: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+
+  @media (max-width: 800px) {
+    display: none;
+  }
+}
+
+.socialIcon {
+  font-size: 2.2rem;
+  color: $color-theme-text;
+  margin-bottom: 2rem;
+  transition: all 0.2s;
+
+  &:hover {
+    color: $color-theme-text-bold;
+  }
+}
+
+// ---------- Right: email ----------
+
+.emailSidebar {
+  position: fixed;
+  bottom: 0;
+  right: -13rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+
+  @media (max-width: 800px) {
+    display: none;
+  }
+}
+
+.emailText {
+  font-size: 1.6rem;
+  color: $color-theme-text;
+  transform: rotate(90deg);
+  padding-right: 17rem;
+  transition: all 0.2s;
+
+  &:hover {
+    color: $color-theme-text-bold;
+  }
+}

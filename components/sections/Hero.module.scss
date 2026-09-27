@@ -1,0 +1,191 @@
+@use '../../styles/variables' as *;
+
+@keyframes float-up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes scale-up {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+// Reveals the slogan from left to right, like typing.
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+// Turns the typing animation off (used on screen sizes where the slogan must wrap).
+@mixin no-typing-animation {
+  white-space: initial;
+  animation: none;
+  overflow: auto;
+  width: auto;
+  border-right: none;
+}
+
+.hero {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  background: hsla(243, 100%, 7%, 0.959);
+  overflow: hidden;
+}
+
+.illustration {
+  width: 60rem;
+  height: 50rem;
+  position: fixed;
+  top: 22vh;
+  right: 18rem;
+  animation: float-up-down 2s ease-in-out infinite alternate-reverse both;
+
+  @media (max-width: 1800px) {
+    width: 45rem;
+    height: 40rem;
+  }
+  @media (max-width: 1400px) {
+    right: 12rem;
+  }
+  @media (max-width: 1250px) {
+    display: none;
+  }
+}
+
+.content {
+  position: fixed;
+  top: 50%;
+  left: 12%;
+  width: 40%;
+  transform: translateY(-50%);
+  overflow: hidden;
+
+  @media (max-width: 1250px) {
+    width: 55%;
+  }
+  @media (max-width: 1000px) {
+    width: 65%;
+  }
+  @media (max-width: 600px) {
+    width: 80%;
+  }
+  @media (max-width: 500px) {
+    left: 10%;
+  }
+}
+
+// NOTE: keep `.greeting` above `.resetSpacing` so `.resetSpacing` wins when both are used.
+.greeting {
+  font-size: 2rem;
+  color: $color-theme-text-bold;
+  margin-top: 3.5rem;
+  line-height: 3rem;
+
+  @media (max-width: 350px) {
+    margin-top: 2rem;
+  }
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.name {
+  color: $color-theme-text;
+  font-size: 6.4rem;
+  margin: 1rem 0 0 0;
+  padding: 0;
+
+  @media (max-width: 500px) {
+    font-size: 4.4rem;
+  }
+}
+
+.resetSpacing {
+  margin: 0;
+  padding: 0;
+}
+
+.slogan {
+  font-size: 3.5rem;
+  color: $color-theme-text;
+  font-weight: 300;
+
+  // Typing animation
+  overflow: hidden;
+  white-space: nowrap;
+  letter-spacing: 0.6rem;
+  animation: typing 6s infinite alternate-reverse both;
+  width: 100%;
+
+  @media (max-width: 1700px) {
+    letter-spacing: 0.2rem;
+  }
+  @media (max-width: 1520px) {
+    letter-spacing: 0.1rem;
+  }
+  @media (max-width: 1500px) {
+    letter-spacing: 0.07rem;
+  }
+  @media (max-width: 1400px) {
+    @include no-typing-animation;
+  }
+  @media (max-width: 500px) {
+    font-size: 2.5rem;
+    margin-top: 0;
+  }
+  @media (max-width: 450px) {
+    white-space: nowrap;
+    letter-spacing: 0.07rem;
+    animation: typing 6s infinite alternate-reverse both;
+    overflow: hidden;
+    width: 100%;
+  }
+  @media (max-width: 400px) {
+    @include no-typing-animation;
+  }
+}
+
+.ctaButton {
+  display: block;
+  padding: 1.2rem 1rem;
+  width: 18rem;
+  border: 1.5px solid $color-theme-text-bold;
+  color: $color-theme-text;
+  border-radius: 0.6rem;
+  margin-top: 7rem;
+  font-size: 2rem;
+  text-align: center;
+  cursor: url('/assets/cursor24.png'), auto;
+  animation-name: scale-up;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+
+  &:hover {
+    background-color: $color-hover-background;
+  }
+
+  @media (max-width: 500px) {
+    margin-top: 3rem;
+  }
+  @media (max-width: 350px) {
+    margin-top: 1.5rem;
+  }
+}
