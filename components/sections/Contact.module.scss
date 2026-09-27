@@ -1,0 +1,105 @@
+@use '../../styles/variables' as *;
+
+.container {
+  width: 100%;
+  margin: 2rem 0 22rem 0;
+  padding: 0 2%;
+}
+
+.content {
+  width: 80rem;
+  display: block;
+  margin: 0 auto;
+
+  @media (max-width: 750px) {
+    width: 60rem;
+  }
+  @media (max-width: 500px) {
+    width: 50rem;
+  }
+  @media (max-width: 400px) {
+    width: 40rem;
+  }
+  @media (max-width: 300px) {
+    width: 35rem;
+  }
+}
+
+.intro {
+  font-size: 2rem;
+  color: $color-theme-text-bold;
+  font-family: $font-cursive;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.number {
+  font-size: 1.6rem;
+  padding-right: 1rem;
+}
+
+.title {
+  font-size: 4.8rem;
+  color: $color-theme-text;
+  line-height: 7.2rem;
+  text-align: center;
+  margin-top: 0;
+  padding: 0;
+  letter-spacing: 0.2rem;
+}
+
+.text {
+  font-size: 2rem;
+  line-height: 3rem;
+  color: $color-theme-text-bold;
+  text-align: center;
+  margin-top: -2.5rem;
+  padding: 0;
+}
+
+.email {
+  color: $color-accent-green;
+}
+
+.button {
+  display: block;
+  padding: 1.4rem 0.5rem;
+  border: 1px solid $color-theme-text-bold;
+  font-size: 2rem;
+  margin: 4rem auto 0 auto;
+  outline: none;
+  text-decoration: none;
+  color: $color-theme-text;
+  width: 13.5rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  cursor: url('/assets/cursor24.png'), auto;
+  transition: all 0.3s;
+
+  &:hover,
+  &:active {
+    background-color: $color-hover-background;
+  }
+}
+
+.socialLinks {
+  width: 45%;
+  display: none;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10rem auto 3rem auto;
+
+  @media (max-width: 800px) {
+    display: flex;
+  }
+}
+
+.socialIcon {
+  font-size: 2.5rem;
+  color: $color-theme-text;
+
+  &:hover {
+    color: $color-theme-text-bold;
+  }
+}

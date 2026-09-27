@@ -1,0 +1,16 @@
+// Shared design tokens. Import in any SCSS module with:
+//   @use '<relative path>/styles/variables' as *;
+
+// Colours
+$color-theme-text-bold: #e492f5; // pink – headings, icons, accents
+$color-theme-text: #f0c4f8; // light pink – main text
+$color-theme-text-light: #e1d1e4; // soft grey-pink – long paragraphs
+$color-theme-background: #0f0226; // page background
+$color-theme-background-light: #321f56; // cards and panels
+$color-hover-background: #625b71; // button hover
+$color-accent-green: #64ffda;
+$color-white: #fff;
+
+// Fonts
+$font-cursive: satisfy, cursive;
+$font-mono: 'Fira Code', 'Fira Mono', 'Roboto Mono', 'Lucida Console', Monaco, monospace;

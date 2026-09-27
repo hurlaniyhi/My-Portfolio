@@ -1,0 +1,336 @@
+@use '../../styles/variables' as *;
+
+$stack-breakpoint: 850px; // below this, image and text stack vertically
+
+.container {
+  width: 100%;
+  margin: 2rem 0 22rem 0;
+  padding: 0 5% 0 12%;
+  overflow: hidden;
+
+  @media (max-width: $stack-breakpoint) {
+    padding: 0 5%;
+  }
+}
+
+// ---------- Card ----------
+
+.card {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20rem;
+  overflow: hidden;
+
+  @media (max-width: $stack-breakpoint) {
+    flex-direction: column;
+    align-items: stretch;
+    margin-bottom: 9rem;
+  }
+}
+
+// Used when the image is on the left, so the text still comes first on small screens.
+.cardReverse {
+  @media (max-width: $stack-breakpoint) {
+    flex-direction: column-reverse;
+    align-items: stretch;
+  }
+}
+
+// ---------- Text column ----------
+
+.infoLeft {
+  width: 27%;
+  margin-right: 3%;
+
+  @media (max-width: $stack-breakpoint) {
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+.infoRight {
+  width: 27%;
+  margin-left: 3%;
+  margin-right: 10%;
+
+  @media (max-width: $stack-breakpoint) {
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+.label {
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  margin: 0;
+  color: $color-theme-text-bold;
+  font-family: $font-mono;
+}
+
+.name {
+  font-size: 3rem;
+  margin: 0;
+  color: $color-theme-text;
+  margin-bottom: 2rem;
+}
+
+.textLeft {
+  text-align: left;
+}
+
+.textRight {
+  text-align: right;
+}
+
+// The description box is wider than its column so it overlaps the image.
+.descriptionWrapper {
+  width: 100%;
+  position: relative;
+  height: 7rem;
+
+  @media (max-width: $stack-breakpoint) {
+    height: auto;
+  }
+}
+
+%description-box {
+  background-color: $color-theme-background-light;
+  padding: 1.5rem 1.5rem;
+  width: 145%;
+  border-radius: 0.5rem;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+
+  @media (max-width: $stack-breakpoint) {
+    position: relative;
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+.descriptionBoxLeft {
+  @extend %description-box;
+  left: 0;
+}
+
+.descriptionBoxRight {
+  @extend %description-box;
+  right: 0;
+}
+
+%description-text {
+  font-size: 1.6rem;
+  color: $color-theme-text;
+  line-height: 2.4rem;
+  margin: 0;
+
+  @media (max-width: $stack-breakpoint) {
+    font-size: 1.8rem;
+    line-height: 3rem;
+  }
+}
+
+.descriptionTextLeft {
+  @extend %description-text;
+  text-align: left;
+}
+
+.descriptionTextRight {
+  @extend %description-text;
+  text-align: right;
+}
+
+.tools {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 5rem;
+
+  @media (max-width: 1360px) {
+    margin-top: 7rem;
+  }
+  @media (max-width: 1030px) {
+    margin-top: 12rem;
+  }
+  @media (max-width: 900px) {
+    margin-top: 8rem;
+  }
+  @media (max-width: $stack-breakpoint) {
+    margin-top: 2rem;
+  }
+}
+
+.tool {
+  font-family: $font-mono;
+  font-size: 1.4rem;
+  color: $color-theme-text-bold;
+  padding: 0;
+  margin: 0;
+  padding-right: 1rem;
+}
+
+%link-icon {
+  font-size: 2.6rem;
+  color: $color-theme-text;
+  margin-top: 1rem;
+  cursor: url('/assets/cursorfill24.png'), auto;
+
+  &:hover {
+    color: $color-theme-text-bold;
+  }
+
+  @media (max-width: $stack-breakpoint) {
+    margin-bottom: 3.5rem;
+  }
+}
+
+.linkIconLeft {
+  @extend %link-icon;
+}
+
+.linkIconRight {
+  @extend %link-icon;
+  float: right;
+}
+
+// ---------- Image column: desktop screenshot ----------
+
+.screenshotWrapperLeft {
+  width: 60%;
+  position: relative;
+  overflow: hidden;
+  height: 55rem;
+
+  @media (max-width: $stack-breakpoint) {
+    width: 100%;
+  }
+  @media (max-width: 600px) {
+    height: 40rem;
+  }
+  @media (max-width: 450px) {
+    height: 35rem;
+  }
+}
+
+.screenshotWrapperRight {
+  width: 60%;
+  margin-right: 10%;
+  position: relative;
+  overflow: hidden;
+  height: 50rem;
+
+  @media (max-width: $stack-breakpoint) {
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%;
+  }
+  @media (max-width: 600px) {
+    height: 40rem;
+  }
+  @media (max-width: 450px) {
+    height: 35rem;
+  }
+}
+
+.screenshot {
+  min-height: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: 100%;
+  object-fit: contain;
+
+  @media (max-width: 400px) {
+    object-fit: cover;
+  }
+}
+
+// ---------- Image column: phone mockup ----------
+
+.phoneWrapperLeft {
+  width: 60%;
+  position: relative;
+  overflow: hidden;
+
+  @media (max-width: $stack-breakpoint) {
+    width: 100%;
+  }
+  @media (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.phoneWrapperRight {
+  width: 60%;
+  margin-right: 10%;
+  position: relative;
+  overflow: hidden;
+
+  @media (max-width: $stack-breakpoint) {
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%;
+  }
+  @media (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.phoneImageLeft {
+  width: 36rem;
+  height: 60rem;
+  margin-left: 37rem;
+
+  @media (max-width: 1670px) {
+    margin-left: 20rem;
+  }
+  @media (max-width: 1430px) {
+    margin-left: 15rem;
+  }
+  @media (max-width: 1280px) {
+    margin-left: 10rem;
+  }
+  @media (max-width: 1130px) {
+    margin-left: 7rem;
+  }
+  @media (max-width: 1010px) {
+    margin-left: 0rem;
+  }
+  @media (max-width: 900px) {
+    margin-left: 7rem;
+  }
+  @media (max-width: $stack-breakpoint) {
+    float: right;
+    margin-right: 10rem;
+  }
+  @media (max-width: 600px) {
+    margin: 0;
+  }
+}
+
+.phoneImageRight {
+  width: 36rem;
+  height: 60rem;
+  margin-left: 25rem;
+
+  @media (max-width: 1130px) {
+    margin-left: 15rem;
+  }
+  @media (max-width: $stack-breakpoint) {
+    margin-left: 10rem;
+  }
+  @media (max-width: 600px) {
+    margin: 0;
+  }
+}

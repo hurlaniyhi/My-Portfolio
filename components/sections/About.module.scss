@@ -1,0 +1,176 @@
+@use '../../styles/variables' as *;
+
+.container {
+  width: 100%;
+  margin: 2rem 0 22rem 0;
+  padding: 0 2% 0 12%;
+  overflow: hidden;
+
+  @media (max-width: 500px) {
+    padding-left: 7%;
+  }
+}
+
+.aboutWrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+
+  @media (max-width: 1080px) {
+    flex-direction: column;
+  }
+}
+
+.textSection {
+  width: 60%;
+
+  @media (max-width: 1080px) {
+    width: 75%;
+  }
+  @media (max-width: 500px) {
+    width: 85%;
+  }
+  @media (max-width: 390px) {
+    width: 90%;
+  }
+}
+
+.aboutText {
+  font-size: 2rem;
+  line-height: 3rem;
+  color: $color-theme-text-light;
+  padding: 0;
+  margin: 1rem 0 0.5rem 0;
+}
+
+.alias {
+  font-family: $font-cursive;
+}
+
+// ---------- Photo ----------
+
+.photoContainer {
+  position: relative;
+  width: 40%;
+  height: 35rem;
+
+  @media (max-width: 1080px) {
+    align-self: flex-end;
+  }
+  @media (max-width: 600px) {
+    height: 45rem;
+    width: 60%;
+  }
+  @media (max-width: 315px) {
+    width: 40%;
+    height: 35rem;
+  }
+}
+
+.photoFrame {
+  width: 29rem;
+  height: 30rem;
+  position: absolute;
+  top: 5rem;
+  right: 5rem;
+  border: 2px solid $color-theme-text-bold;
+  border-radius: 0.5rem;
+  transition: all 0.2s;
+
+  @media (max-width: 600px) {
+    width: 35rem;
+    height: 36rem;
+  }
+  @media (max-width: 315px) {
+    width: 29rem;
+    height: 30rem;
+  }
+}
+
+.photo {
+  width: 29rem;
+  height: 30rem;
+  position: absolute;
+  top: 3rem;
+  right: 7rem;
+  border-radius: 0.5rem;
+  background-image: linear-gradient(
+      to right,
+      rgba($color-theme-text-bold, 0.3),
+      rgba($color-theme-text-bold, 0.3)
+    ),
+    url('/assets/portfolio-pics.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  overflow: hidden;
+  z-index: 2;
+  transition: all 0.3s;
+
+  &:hover {
+    background-image: linear-gradient(
+        to right,
+        rgba($color-theme-text-bold, 0.05),
+        rgba($color-theme-text-bold, 0.05)
+      ),
+      url('/assets/portfolio-pics.jpg');
+  }
+
+  &:hover ~ .photoFrame {
+    top: 4.5rem;
+    right: 5.5rem;
+  }
+
+  @media (max-width: 600px) {
+    width: 35rem;
+    height: 36rem;
+  }
+  @media (max-width: 315px) {
+    width: 29rem;
+    height: 30rem;
+  }
+}
+
+// ---------- Technologies list ----------
+
+.technologies {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 3.5rem;
+}
+
+.technologyColumn {
+  width: 38%;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 800px) {
+    width: 45%;
+  }
+  @media (max-width: 500px) {
+    width: 50%;
+  }
+}
+
+.technology {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 0 1.5rem 0;
+}
+
+.technologyIcon {
+  font-size: 2rem;
+  color: $color-theme-text-bold;
+}
+
+.technologyText {
+  font-size: 1.6rem;
+  color: $color-accent-green;
+  padding-left: 1rem;
+  line-height: 2.4rem;
+  margin: 0;
+}
